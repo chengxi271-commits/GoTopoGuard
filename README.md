@@ -4,6 +4,10 @@
 
 This repository accompanies the paper *GoTopoGuard: Topology-Aware Risk Monitoring for Rare Structural Failures in Neural Go Engines*, accepted at PRICAI 2026.
 
+## Author
+
+Yixi Chen — [ORCID: 0009-0004-7084-0395](https://orcid.org/0009-0004-7084-0395)
+
 > **Coming soon.**
 >
 > The implementation and reproducibility artifacts are undergoing final cleanup and verification before public release.
