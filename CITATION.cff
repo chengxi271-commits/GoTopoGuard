@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying PRICAI 2026 paper and identify the software version used; see README.md."
+type: software
+title: "GoTopoGuard: reference topology extractor"
+version: "0.1.0"
+date-released: "2026-11-06"
+license: Apache-2.0
+authors:
+  - family-names: "Chen"
+    given-names: "Yixi"
+    orcid: "https://orcid.org/0009-0004-7084-0395"
+repository-code: "https://github.com/chengxi271-commits/GoTopoGuard"
+keywords:
+  - Go AI
+  - topology
+  - runtime monitoring

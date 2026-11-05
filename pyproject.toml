@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gotopoguard"
+version = "0.1.0"
+description = "Reference board-topology features accompanying GoTopoGuard (PRICAI 2026)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Yixi Chen" }]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+
+[project.urls]
+Repository = "https://github.com/chengxi271-commits/GoTopoGuard"
+Issues = "https://github.com/chengxi271-commits/GoTopoGuard/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

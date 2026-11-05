@@ -1,0 +1,25 @@
+{
+  "board": [
+    ".....",
+    ".BBB.",
+    ".B.B.",
+    ".BBB.",
+    "....."
+  ],
+  "features": {
+    "black_articulation_count": 0,
+    "black_bounded_empty_region_count": 1,
+    "black_group_count": 1,
+    "black_max_group_size": 8,
+    "black_max_liberty_count": 13,
+    "board_height": 5,
+    "board_width": 5,
+    "empty_region_count": 2,
+    "enclosed_empty_region_count": 1,
+    "white_articulation_count": 0,
+    "white_bounded_empty_region_count": 0,
+    "white_group_count": 0,
+    "white_max_group_size": 0,
+    "white_max_liberty_count": 0
+  }
+}

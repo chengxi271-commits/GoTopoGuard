@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Local engines, models, downloaded games, and run outputs
+external/
+data/downloads/
+models/
+checkpoints/
+results/raw/
+logs/
+
+
+# Credentials and local editor state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.vscode/
+.idea/
