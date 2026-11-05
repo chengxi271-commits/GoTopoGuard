@@ -1,0 +1,258 @@
+嚜盥iff --git a/src/FullBoard.cpp b/src/FullBoard.cpp
+index 407d851..ca89142 100644
+--- a/src/FullBoard.cpp
++++ b/src/FullBoard.cpp
+@@ -31,6 +31,8 @@
+ 
+ #include <array>
+ #include <cassert>
++#include <string>
++#include <vector>
+ 
+ #include "FullBoard.h"
+ 
+@@ -222,3 +224,95 @@ void FullBoard::reset_board(const int size) {
+     m_hash = calc_hash();
+     m_ko_hash = calc_ko_hash();
+ }
++
++void FullBoard::set_raw_position(const std::vector<std::string>& rows,
++                                 const int tomove) {
++    const int size = static_cast<int>(rows.size());
++    assert(size > 0 && size <= BOARD_SIZE);
++    reset_board(size);
++
++    for (int y = 0; y < size; y++) {
++        assert(static_cast<int>(rows[y].size()) == size);
++        for (int x = 0; x < size; x++) {
++            const auto vertex = get_vertex(x, size - 1 - y);
++            if (rows[y][x] == 'B' || rows[y][x] == 'X'
++                || rows[y][x] == 'b' || rows[y][x] == 'x') {
++                m_state[vertex] = BLACK;
++            } else if (rows[y][x] == 'W' || rows[y][x] == 'O'
++                       || rows[y][x] == 'w' || rows[y][x] == 'o') {
++                m_state[vertex] = WHITE;
++            } else {
++                m_state[vertex] = EMPTY;
++            }
++        }
++    }
++
++    m_prisoners[BLACK] = 0;
++    m_prisoners[WHITE] = 0;
++    m_empty_cnt = 0;
++    for (int i = 0; i < m_numvertices; i++) {
++        m_parent[i] = NUM_VERTICES;
++        m_next[i] = NUM_VERTICES;
++        m_libs[i] = 0;
++        m_stones[i] = 0;
++        m_neighbours[i] = 0;
++        if (m_state[i] == EMPTY) {
++            m_empty_idx[i] = m_empty_cnt;
++            m_empty[m_empty_cnt++] = i;
++        }
++    }
++
++    for (int y = 0; y < size; y++) {
++        for (int x = 0; x < size; x++) {
++            const auto vertex = get_vertex(x, y);
++            for (int k = 0; k < 4; k++) {
++                const auto neighbor = vertex + m_dirs[k];
++                const auto state = m_state[neighbor];
++                if (state == INVAL) {
++                    m_neighbours[vertex] += (1 << (NBR_SHIFT * BLACK));
++                    m_neighbours[vertex] += (1 << (NBR_SHIFT * WHITE));
++                    m_neighbours[vertex] += (1 << (NBR_SHIFT * EMPTY));
++                } else {
++                    m_neighbours[vertex] += (1 << (NBR_SHIFT * state));
++                }
++            }
++        }
++    }
++
++    for (int y = 0; y < size; y++) {
++        for (int x = 0; x < size; x++) {
++            const auto vertex = get_vertex(x, y);
++            if (m_state[vertex] == BLACK || m_state[vertex] == WHITE) {
++                m_parent[vertex] = vertex;
++                m_next[vertex] = vertex;
++                m_libs[vertex] = count_pliberties(vertex);
++                m_stones[vertex] = 1;
++            }
++        }
++    }
++
++    for (int y = 0; y < size; y++) {
++        for (int x = 0; x < size; x++) {
++            const auto vertex = get_vertex(x, y);
++            if (m_state[vertex] != BLACK && m_state[vertex] != WHITE) {
++                continue;
++            }
++            for (int k = 0; k < 4; k++) {
++                const auto neighbor = vertex + m_dirs[k];
++                if (m_state[neighbor] == m_state[vertex]
++                    && m_parent[neighbor] != m_parent[vertex]) {
++                    if (m_stones[m_parent[vertex]]
++                        >= m_stones[m_parent[neighbor]]) {
++                        merge_strings(m_parent[vertex], m_parent[neighbor]);
++                    } else {
++                        merge_strings(m_parent[neighbor], m_parent[vertex]);
++                    }
++                }
++            }
++        }
++    }
++
++    FastBoard::set_to_move(tomove);
++    m_hash = calc_hash(NO_VERTEX);
++    m_ko_hash = calc_ko_hash();
++}
+diff --git a/src/FullBoard.h b/src/FullBoard.h
+index b3afd84..925244a 100644
+--- a/src/FullBoard.h
++++ b/src/FullBoard.h
+@@ -33,6 +33,8 @@
+ #include "config.h"
+ 
+ #include <cstdint>
++#include <string>
++#include <vector>
+ 
+ #include "FastBoard.h"
+ 
+@@ -51,6 +53,7 @@ public:
+     std::uint64_t calc_hash(int komove = NO_VERTEX) const;
+     std::uint64_t calc_symmetry_hash(int komove, int symmetry) const;
+     std::uint64_t calc_ko_hash() const;
++    void set_raw_position(const std::vector<std::string>& rows, int tomove);
+ 
+     std::uint64_t m_hash;
+     std::uint64_t m_ko_hash;
+diff --git a/src/GTP.cpp b/src/GTP.cpp
+index e22017d..78296a1 100644
+--- a/src/GTP.cpp
++++ b/src/GTP.cpp
+@@ -408,6 +408,7 @@ const std::string GTP::s_commands[] = {
+     "clear_cache",
+     "place_free_handicap",
+     "set_free_handicap",
++    "gotopo-set_position",
+     "loadsgf",
+     "printsgf",
+     "kgs-genmove_cleanup",
+@@ -985,6 +986,34 @@ void GTP::execute(GameState& game, const std::string& xinput) {
+         std::string stonestring = game.board.get_stone_list();
+         gtp_printf(id, "%s", stonestring.c_str());
+ 
++        return;
++    } else if (command.find("gotopo-set_position") == 0) {
++        std::istringstream cmdstream(command);
++        std::string tmp, color, boardstr;
++        cmdstream >> tmp;
++        cmdstream >> color;
++        cmdstream >> boardstr;
++        int who = FastBoard::EMPTY;
++        if (color == "b" || color == "black" || color == "B") {
++            who = FastBoard::BLACK;
++        } else if (color == "w" || color == "white" || color == "W") {
++            who = FastBoard::WHITE;
++        }
++        const auto boardsize = game.board.get_boardsize();
++        if (who == FastBoard::EMPTY
++            || static_cast<int>(boardstr.size()) != boardsize * boardsize) {
++            gtp_fail_printf(id, "syntax error");
++            return;
++        }
++        std::vector<std::string> rows;
++        for (int y = 0; y < boardsize; y++) {
++            rows.emplace_back(boardstr.substr(y * boardsize, boardsize));
++        }
++        if (game.set_raw_position(rows, who)) {
++            gtp_printf(id, "");
++        } else {
++            gtp_fail_printf(id, "invalid board");
++        }
+         return;
+     } else if (command.find("loadsgf") == 0) {
+         std::istringstream cmdstream(command);
+diff --git a/src/GameState.cpp b/src/GameState.cpp
+index f523b0f..00c9035 100644
+--- a/src/GameState.cpp
++++ b/src/GameState.cpp
+@@ -65,6 +65,36 @@ void GameState::reset_game() {
+     m_resigned = FastBoard::EMPTY;
+ }
+ 
++bool GameState::set_raw_position(const std::vector<std::string>& rows,
++                                 const int tomove) {
++    const int size = static_cast<int>(rows.size());
++    if (size <= 0 || size > BOARD_SIZE) {
++        return false;
++    }
++    for (const auto& row : rows) {
++        if (static_cast<int>(row.size()) != size) {
++            return false;
++        }
++        for (const auto ch : row) {
++            if (ch != 'B' && ch != 'W' && ch != 'X' && ch != 'O'
++                && ch != 'b' && ch != 'w' && ch != 'x' && ch != 'o'
++                && ch != '.') {
++                return false;
++            }
++        }
++    }
++    board.set_raw_position(rows, tomove);
++    m_movenum = 0;
++    m_passes = 0;
++    m_handicap = 0;
++    m_komove = FastBoard::NO_VERTEX;
++    m_lastmove = FastBoard::NO_VERTEX;
++    m_resigned = FastBoard::EMPTY;
++    anchor_ko_history();
++    anchor_game_history();
++    return true;
++}
++
+ bool GameState::forward_move() {
+     if (m_game_history.size() > m_movenum + 1) {
+         m_movenum++;
+diff --git a/src/GameState.h b/src/GameState.h
+index 9f6b56b..690d80b 100644
+--- a/src/GameState.h
++++ b/src/GameState.h
+@@ -51,6 +51,7 @@ public:
+     }
+     void init_game(int size, float komi);
+     void reset_game();
++    bool set_raw_position(const std::vector<std::string>& rows, int tomove);
+     bool set_fixed_handicap(int stones);
+     int set_fixed_handicap_2(int stones);
+     void place_free_handicap(int stones, Network& network);
+diff --git a/src/KoState.cpp b/src/KoState.cpp
+index 62ef342..ffc9b71 100644
+--- a/src/KoState.cpp
++++ b/src/KoState.cpp
+@@ -64,6 +64,11 @@ void KoState::reset_game() {
+     m_ko_hash_history.push_back(board.get_ko_hash());
+ }
+ 
++void KoState::anchor_ko_history() {
++    m_ko_hash_history.clear();
++    m_ko_hash_history.push_back(board.get_ko_hash());
++}
++
+ void KoState::play_move(const int vertex) {
+     play_move(board.get_to_move(), vertex);
+ }
+diff --git a/src/KoState.h b/src/KoState.h
+index 1f6805a..b3f01df 100644
+--- a/src/KoState.h
++++ b/src/KoState.h
+@@ -42,6 +42,7 @@ public:
+     void init_game(int size, float komi);
+     bool superko() const;
+     void reset_game();
++    void anchor_ko_history();
+ 
+     void play_move(int color, int vertex);
+     void play_move(int vertex);

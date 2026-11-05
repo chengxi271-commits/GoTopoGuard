@@ -1,0 +1,37 @@
+{
+  "run_id": "R013_B5_GBDT",
+  "generated_at_unix": 1780805905,
+  "evidence_class": "R013 held-out natural false-positive audit",
+  "status": "done",
+  "detector_selection": "manual",
+  "detector_baseline": "B5_topology_plus_search_plus_metamorphic_gbdt",
+  "detector_summaries": {},
+  "feature_count": 42,
+  "fold_count": 5,
+  "target_recalls": [
+    0.8,
+    0.9
+  ],
+  "summary_by_target_recall": {
+    "0.8": {
+      "group_count": 30,
+      "position_count": 6781,
+      "trigger_count": 2463,
+      "micro_trigger_rate": 0.36322076389912994,
+      "mean_group_trigger_rate": 0.35720185969201207,
+      "median_group_trigger_rate": 0.36230680340892674,
+      "max_group_trigger_rate": 0.6394557823129252
+    },
+    "0.9": {
+      "group_count": 30,
+      "position_count": 6781,
+      "trigger_count": 3481,
+      "micro_trigger_rate": 0.5133461141424569,
+      "mean_group_trigger_rate": 0.5023862810475259,
+      "median_group_trigger_rate": 0.48489335066685924,
+      "max_group_trigger_rate": 0.8790322580645161
+    }
+  },
+  "input_feature_rows": "experiments/results/R011_DETECTION_BASELINE_SWEEP/feature_rows.jsonl",
+  "input_metrics": "experiments/results/R011_DETECTION_BASELINE_SWEEP/family_heldout_metrics.jsonl"
+}

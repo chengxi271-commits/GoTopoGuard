@@ -1,0 +1,74 @@
+{
+  "run_id": "R014B",
+  "generated_at_unix": 1780818558,
+  "evidence_class": "R014B utility-calibrated guard redesign using 4096-visit same-engine relative oracle labels",
+  "status": "done",
+  "position_count": 1144,
+  "dataset_counts": {
+    "D3": 136,
+    "D5": 1008
+  },
+  "effect_counts": {
+    "preserved_correct": 860,
+    "unresolved_error": 126,
+    "regression": 54,
+    "correction": 104
+  },
+  "utility_methods": {
+    "U1_utility_b3_correction": {
+      "feature_baseline": "B3_topology_gbdt",
+      "mode": "correction_only",
+      "penalty": 0.0,
+      "max_trigger_rate": null
+    },
+    "U2_utility_b5_correction": {
+      "feature_baseline": "B5_topology_plus_search_plus_metamorphic_gbdt",
+      "mode": "correction_only",
+      "penalty": 0.0,
+      "max_trigger_rate": null
+    },
+    "U3_utility_b3_corr_minus_reg": {
+      "feature_baseline": "B3_topology_gbdt",
+      "mode": "correction_minus_regression",
+      "penalty": 1.0,
+      "max_trigger_rate": null
+    },
+    "U4_utility_b5_corr_minus_reg": {
+      "feature_baseline": "B5_topology_plus_search_plus_metamorphic_gbdt",
+      "mode": "correction_minus_regression",
+      "penalty": 1.0,
+      "max_trigger_rate": null
+    },
+    "U5_utility_b5_regression_averse": {
+      "feature_baseline": "B5_topology_plus_search_plus_metamorphic_gbdt",
+      "mode": "correction_minus_regression",
+      "penalty": 2.0,
+      "max_trigger_rate": null
+    },
+    "U6_utility_b5_cap75": {
+      "feature_baseline": "B5_topology_plus_search_plus_metamorphic_gbdt",
+      "mode": "correction_minus_regression",
+      "penalty": 1.0,
+      "max_trigger_rate": 0.75
+    },
+    "U7_utility_b5_cap50": {
+      "feature_baseline": "B5_topology_plus_search_plus_metamorphic_gbdt",
+      "mode": "correction_minus_regression",
+      "penalty": 1.0,
+      "max_trigger_rate": 0.5
+    }
+  },
+  "oracle_boundary": "4096 visits is a same-engine relative oracle only, not ground truth.",
+  "calibration_boundary": "Utility triggers are trained from held-out-group calibration labels derived from v256/v1024/v4096 top-move relations; this is a redesigned guard experiment, not a deployment-free claim.",
+  "uniform_available": true,
+  "uniform_oracle_agreement_rate": 0.8426573426573427,
+  "uniform_mean_visits": 1024.0,
+  "best_utility_method": "U3_utility_b3_corr_minus_reg",
+  "best_utility_oracle_agreement_rate": 0.8435314685314685,
+  "best_utility_mean_visits": 738.013986013986,
+  "best_utility_trigger_rate": 0.6276223776223776,
+  "best_utility_net_correction_gain": 51,
+  "beats_uniform_agreement": true,
+  "agreement_delta_vs_uniform": 0.0008741258741258306,
+  "mean_visit_delta_vs_uniform": -285.986013986014
+}

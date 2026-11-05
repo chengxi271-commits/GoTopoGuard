@@ -1,0 +1,28 @@
+{
+  "run_id": "R009",
+  "generated_at_unix": 1780756668,
+  "evidence_class": "perturbation split construction only",
+  "status": "done",
+  "split_id": "D4_MEANINGLESS_STONE_PERTURBATION",
+  "input_paths": [
+    "experiments\\results\\R006_NATURAL_HUMAN_SPLIT\\positions.jsonl",
+    "experiments\\results\\R007_NATURAL_ENGINE_SPLIT\\positions.jsonl"
+  ],
+  "input_position_count": 7000,
+  "pair_count": 7000,
+  "status_counts": {
+    "valid_pair": 7000
+  },
+  "source_split_counts": {
+    "D1_NATURAL_HUMAN_JGDB": 5000,
+    "D2_NATURAL_ENGINE_KATAGO": 2000
+  },
+  "perturbation_color_counts": {
+    "B": 3578,
+    "W": 3422
+  },
+  "low_impact_proxy_counts": {
+    "isolated_no_capture": 7000
+  },
+  "duplicate_perturbed_signature_count": 0
+}

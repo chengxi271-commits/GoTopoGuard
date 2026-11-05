@@ -1,0 +1,1550 @@
+{
+  "num_rows": 2144,
+  "groups": [
+    {
+      "group": "ALL",
+      "name": "ALL",
+      "n": 2144,
+      "failures": 0,
+      "disagree_1024": 1725,
+      "disagree_8192": 1740,
+      "valid_n": 2144,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 0.804570895522388,
+      "disagree_8192_rate": 0.8115671641791045
+    },
+    {
+      "group": "dataset",
+      "name": "D3",
+      "n": 136,
+      "failures": 0,
+      "disagree_1024": 132,
+      "disagree_8192": 134,
+      "valid_n": 136,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 0.9705882352941176,
+      "disagree_8192_rate": 0.9852941176470589
+    },
+    {
+      "group": "dataset",
+      "name": "D4",
+      "n": 1000,
+      "failures": 0,
+      "disagree_1024": 859,
+      "disagree_8192": 865,
+      "valid_n": 1000,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 0.859,
+      "disagree_8192_rate": 0.865
+    },
+    {
+      "group": "dataset",
+      "name": "D5",
+      "n": 1008,
+      "failures": 0,
+      "disagree_1024": 734,
+      "disagree_8192": 741,
+      "valid_n": 1008,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 0.7281746031746031,
+      "disagree_8192_rate": 0.7351190476190477
+    },
+    {
+      "group": "family",
+      "name": "boundary_escape_route",
+      "n": 144,
+      "failures": 0,
+      "disagree_1024": 112,
+      "disagree_8192": 111,
+      "valid_n": 144,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 0.7777777777777778,
+      "disagree_8192_rate": 0.7708333333333334
+    },
+    {
+      "group": "family",
+      "name": "cut_connect_corridor",
+      "n": 144,
+      "failures": 0,
+      "disagree_1024": 126,
+      "disagree_8192": 131,
+      "valid_n": 144,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 0.875,
+      "disagree_8192_rate": 0.9097222222222222
+    },
+    {
+      "group": "family",
+      "name": "cyclic_enclosure",
+      "n": 144,
+      "failures": 0,
+      "disagree_1024": 133,
+      "disagree_8192": 134,
+      "valid_n": 144,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 0.9236111111111112,
+      "disagree_8192_rate": 0.9305555555555556
+    },
+    {
+      "group": "family",
+      "name": "false_eye_enclosure",
+      "n": 144,
+      "failures": 0,
+      "disagree_1024": 139,
+      "disagree_8192": 139,
+      "valid_n": 144,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 0.9652777777777778,
+      "disagree_8192_rate": 0.9652777777777778
+    },
+    {
+      "group": "family",
+      "name": "go_attack_early_21_40",
+      "n": 20,
+      "failures": 0,
+      "disagree_1024": 20,
+      "disagree_8192": 20,
+      "valid_n": 20,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 1.0,
+      "disagree_8192_rate": 1.0
+    },
+    {
+      "group": "family",
+      "name": "go_attack_early_41_80",
+      "n": 20,
+      "failures": 0,
+      "disagree_1024": 19,
+      "disagree_8192": 19,
+      "valid_n": 20,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 0.95,
+      "disagree_8192_rate": 0.95
+    },
+    {
+      "group": "family",
+      "name": "go_attack_mid_6_20",
+      "n": 40,
+      "failures": 0,
+      "disagree_1024": 39,
+      "disagree_8192": 40,
+      "valid_n": 40,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 0.975,
+      "disagree_8192_rate": 1.0
+    },
+    {
+      "group": "family",
+      "name": "go_attack_near_1_5",
+      "n": 40,
+      "failures": 0,
+      "disagree_1024": 38,
+      "disagree_8192": 39,
+      "valid_n": 40,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 0.95,
+      "disagree_8192_rate": 0.975
+    },
+    {
+      "group": "family",
+      "name": "go_attack_terminal",
+      "n": 16,
+      "failures": 0,
+      "disagree_1024": 16,
+      "disagree_8192": 16,
+      "valid_n": 16,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 1.0,
+      "disagree_8192_rate": 1.0
+    },
+    {
+      "group": "family",
+      "name": "ladder_net_escape",
+      "n": 144,
+      "failures": 0,
+      "disagree_1024": 109,
+      "disagree_8192": 113,
+      "valid_n": 144,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 0.7569444444444444,
+      "disagree_8192_rate": 0.7847222222222222
+    },
+    {
+      "group": "family",
+      "name": "pass_scoring_instability",
+      "n": 144,
+      "failures": 0,
+      "disagree_1024": 57,
+      "disagree_8192": 52,
+      "valid_n": 144,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 0.3958333333333333,
+      "disagree_8192_rate": 0.3611111111111111
+    },
+    {
+      "group": "family",
+      "name": "perturbation_low_adjacency",
+      "n": 1000,
+      "failures": 0,
+      "disagree_1024": 859,
+      "disagree_8192": 865,
+      "valid_n": 1000,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 0.859,
+      "disagree_8192_rate": 0.865
+    },
+    {
+      "group": "family",
+      "name": "shared_liberty_race",
+      "n": 144,
+      "failures": 0,
+      "disagree_1024": 58,
+      "disagree_8192": 61,
+      "valid_n": 144,
+      "failure_rate": 0.0,
+      "disagree_1024_rate": 0.4027777777777778,
+      "disagree_8192_rate": 0.4236111111111111
+    }
+  ],
+  "status": "done",
+  "engine_name": "leela-zero",
+  "command": [
+    "[local-path]/leelaz",
+    "--gtp",
+    "--noponder",
+    "--visits",
+    "512",
+    "--threads",
+    "16",
+    "--weights",
+    "[local-path]/0e9ea880fd3c4444695e8ff4b8a36310d2c03f7c858cadd37af3b76df1d1d15f.gz",
+    "--quiet",
+    "--cpu-only"
+  ],
+  "cwd": null,
+  "env": {
+    "OCL_ICD_VENDORS": "[local-path]/opencl_icd"
+  },
+  "engine_komi_override": null,
+  "engine_visits": 512,
+  "engine_rollouts": null,
+  "num_selected": 2144,
+  "num_done": 0,
+  "skipped_input": [
+    {
+      "position_id": "R009_pair_00015",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00016",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00148",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00149",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00150",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00221",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00222",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00223",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00270",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.25"
+    },
+    {
+      "position_id": "R009_pair_00271",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.25"
+    },
+    {
+      "position_id": "R009_pair_00272",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.25"
+    },
+    {
+      "position_id": "R009_pair_00368",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00369",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00370",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00389",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00390",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00391",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00434",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00435",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00436",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00502",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00503",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00504",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00559",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00560",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00670",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00671",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00734",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00735",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00736",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00743",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00744",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00745",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00802",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00803",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00804",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00831",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00832",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00833",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00836",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00837",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_00893",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00894",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00895",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00971",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00972",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_00973",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_01049",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_01050",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_01051",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_01094",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_01095",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_01171",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_01172",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_01173",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_01187",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_01188",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_01189",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_01190",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_01191",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_01192",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_01232",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_01233",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_01234",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_01389",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_01845",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_01846",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_01847",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_01960",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_01961",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02052",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02053",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02107",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_02108",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_02109",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_02204",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02205",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02213",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02214",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02240",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02241",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02242",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02320",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02321",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02405",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02406",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02407",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02466",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_02467",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_02475",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02476",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02598",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_02599",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_02600",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_02626",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02627",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02628",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02673",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02674",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02675",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02829",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_02847",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_02848",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_02849",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_02863",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_02864",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_02865",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_02872",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_02873",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_02874",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03123",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03124",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03125",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03137",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03138",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03139",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03178",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03179",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03180",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03250",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03251",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03252",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03293",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03294",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03295",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03328",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03329",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03330",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03367",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03368",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03369",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03515",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03516",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03517",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03559",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03560",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03597",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03598",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03599",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03600",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03663",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03664",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03665",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03725",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03726",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03727",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03762",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03763",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03764",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03793",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03794",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03795",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03796",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03797",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03862",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03863",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03864",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03976",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03977",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03978",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_03987",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03988",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_03989",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04034",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04035",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04036",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04037",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04059",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04060",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04061",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04073",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04074",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04075",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04084",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04085",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04086",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04112",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04113",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04114",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04140",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04141",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04142",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04176",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04177",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04178",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04224",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04225",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04226",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04290",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04291",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04292",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04348",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04349",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04394",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04395",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04560",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04590",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04606",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04614",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04632",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04667",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04695",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04696",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04697",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04730",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04735",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04744",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04766",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04767",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04768",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04769",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04791",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04828",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04876",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04898",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R009_pair_04910",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04948",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04972",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R009_pair_04993",
+      "dataset": "D4",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    }
+  ],
+  "anchor_query_features": "experiments/results/R016_BUDGET_GENERALIZATION_QUERIES/query_budget_features.jsonl"
+}

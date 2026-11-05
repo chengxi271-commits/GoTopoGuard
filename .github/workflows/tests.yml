@@ -13,10 +13,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - run: python -m pip install .
+      - run: python -m pip install ".[reproduce]"
       - run: python -m unittest discover -s tests -v
+      - run: python scripts/verify_paper.py
       - run: python examples/minimal_features.py
       - run: python -m gotopoguard examples/board.json
       - name: Check installed package outside the source tree
         working-directory: ${{ runner.temp }}
-        run: python -c "import gotopoguard; assert gotopoguard.__version__ == '0.1.0'"
+        run: python -c "import gotopoguard; assert gotopoguard.__version__ == '0.2.0'"

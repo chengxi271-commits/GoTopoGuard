@@ -1,0 +1,150 @@
+{
+  "run_id": "R011_METAMORPHIC_SYMMETRY_FEATURES",
+  "generated_at_unix": 1780805441,
+  "evidence_class": "merged KataGo metamorphic symmetry-consistency feature extraction",
+  "status": "done",
+  "query_compatible_position_count": 14706,
+  "skipped_position_count": 438,
+  "shard_count": 4,
+  "symmetries": [
+    "rot90",
+    "rot180",
+    "rot270",
+    "flip_x",
+    "flip_y",
+    "transpose",
+    "anti_transpose"
+  ],
+  "visits": [
+    64,
+    256
+  ],
+  "expected_query_count": 205884,
+  "completed_query_count": 205884,
+  "expected_position_feature_count": 14706,
+  "position_feature_count": 14706,
+  "base_query_feature_path": "experiments/results/R011_KATAGO_SEARCH_FEATURES/query_search_features.jsonl",
+  "shards_root": "experiments/results/R011_METAMORPHIC_SYMMETRY_FEATURES_SHARDS",
+  "skipped_sample": [
+    {
+      "position_id": "R006_jgdb_00015",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00016",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00148",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00149",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00150",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00221",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R006_jgdb_00222",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R006_jgdb_00223",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R006_jgdb_00270",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.25"
+    },
+    {
+      "position_id": "R006_jgdb_00271",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.25"
+    },
+    {
+      "position_id": "R006_jgdb_00272",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.25"
+    },
+    {
+      "position_id": "R006_jgdb_00368",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00369",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00370",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00389",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00390",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00391",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00434",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R006_jgdb_00435",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R006_jgdb_00436",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "run_id": "R008",
+  "split_id": "D3_ADVERSARIAL_GO_ATTACK",
+  "source_id": "go_attack_site_examples",
+  "source_url": "https://goattack.far.ai",
+  "site_js_url": "https://goattack.far.ai/assets/index.fd610701.js",
+  "target_game_count": 20,
+  "fetched_game_count": 20,
+  "source_fetch_summary": {
+    "status": "ok",
+    "site_base": "https://goattack.far.ai",
+    "site_js_url": "https://goattack.far.ai/assets/index.fd610701.js",
+    "dir_count": 103,
+    "csv_probe_count": 3,
+    "csv_success_count": 3,
+    "candidate_count": 20,
+    "fetched_count": 20,
+    "errors": [],
+    "attempts_used": 1
+  },
+  "evidence_class": "adversarial replay split construction only"
+}

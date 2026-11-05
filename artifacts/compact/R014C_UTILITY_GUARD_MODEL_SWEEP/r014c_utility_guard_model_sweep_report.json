@@ -1,0 +1,145 @@
+{
+  "run_id": "R014C",
+  "generated_at_unix": 1780819882,
+  "evidence_class": "R014C utility guard model/feature sweep using 4096-visit same-engine relative oracle labels",
+  "status": "done",
+  "position_count": 1144,
+  "dataset_counts": {
+    "D3": 136,
+    "D5": 1008
+  },
+  "effect_counts": {
+    "preserved_correct": 860,
+    "unresolved_error": 126,
+    "regression": 54,
+    "correction": 104
+  },
+  "config_count": 16,
+  "configs": [
+    {
+      "feature_profile": "B3",
+      "model_kind": "gbdt",
+      "penalty": 1.0,
+      "max_trigger_rate": null,
+      "name": "S01_b3_gbdt_p1"
+    },
+    {
+      "feature_profile": "B3",
+      "model_kind": "gbdt",
+      "penalty": 0.5,
+      "max_trigger_rate": null,
+      "name": "S02_b3_gbdt_p0p5"
+    },
+    {
+      "feature_profile": "B3",
+      "model_kind": "gbdt",
+      "penalty": 1.5,
+      "max_trigger_rate": null,
+      "name": "S03_b3_gbdt_p1p5"
+    },
+    {
+      "feature_profile": "B3",
+      "model_kind": "gbdt",
+      "penalty": 2.0,
+      "max_trigger_rate": null,
+      "name": "S04_b3_gbdt_p2"
+    },
+    {
+      "feature_profile": "B3",
+      "model_kind": "logreg",
+      "penalty": 1.0,
+      "max_trigger_rate": null,
+      "name": "S05_b3_logreg_p1"
+    },
+    {
+      "feature_profile": "B3",
+      "model_kind": "rf",
+      "penalty": 1.0,
+      "max_trigger_rate": null,
+      "name": "S06_b3_rf_p1"
+    },
+    {
+      "feature_profile": "B3",
+      "model_kind": "rf",
+      "penalty": 1.5,
+      "max_trigger_rate": null,
+      "name": "S07_b3_rf_p1p5"
+    },
+    {
+      "feature_profile": "B3",
+      "model_kind": "extra",
+      "penalty": 1.0,
+      "max_trigger_rate": null,
+      "name": "S08_b3_extra_p1"
+    },
+    {
+      "feature_profile": "B3",
+      "model_kind": "extra",
+      "penalty": 1.5,
+      "max_trigger_rate": null,
+      "name": "S09_b3_extra_p1p5"
+    },
+    {
+      "feature_profile": "B4",
+      "model_kind": "gbdt",
+      "penalty": 1.0,
+      "max_trigger_rate": null,
+      "name": "S10_b4_gbdt_p1"
+    },
+    {
+      "feature_profile": "B4",
+      "model_kind": "gbdt",
+      "penalty": 1.5,
+      "max_trigger_rate": null,
+      "name": "S11_b4_gbdt_p1p5"
+    },
+    {
+      "feature_profile": "B5",
+      "model_kind": "gbdt",
+      "penalty": 1.0,
+      "max_trigger_rate": null,
+      "name": "S12_b5_gbdt_p1"
+    },
+    {
+      "feature_profile": "B5",
+      "model_kind": "gbdt",
+      "penalty": 2.0,
+      "max_trigger_rate": null,
+      "name": "S13_b5_gbdt_p2"
+    },
+    {
+      "feature_profile": "B5",
+      "model_kind": "extra",
+      "penalty": 1.0,
+      "max_trigger_rate": null,
+      "name": "S14_b5_extra_p1"
+    },
+    {
+      "feature_profile": "B5",
+      "model_kind": "gbdt",
+      "penalty": 1.0,
+      "max_trigger_rate": 0.75,
+      "name": "S15_b5_gbdt_p1_cap75"
+    },
+    {
+      "feature_profile": "B5",
+      "model_kind": "gbdt",
+      "penalty": 1.0,
+      "max_trigger_rate": 0.5,
+      "name": "S16_b5_gbdt_p1_cap50"
+    }
+  ],
+  "oracle_boundary": "4096 visits is a same-engine relative oracle only, not ground truth.",
+  "calibration_boundary": "Utility triggers are trained from held-out-group calibration labels derived from v256/v1024/v4096 top-move relations.",
+  "uniform_available": true,
+  "uniform_oracle_agreement_rate": 0.8426573426573427,
+  "uniform_mean_visits": 1024.0,
+  "best_sweep_method": "S09_b3_extra_p1p5",
+  "best_sweep_oracle_agreement_rate": 0.847027972027972,
+  "best_sweep_mean_visits": 874.965034965035,
+  "best_sweep_trigger_rate": 0.8059440559440559,
+  "best_sweep_net_correction_gain": 55,
+  "beats_uniform_agreement": true,
+  "agreement_delta_vs_uniform": 0.004370629370629264,
+  "mean_visit_delta_vs_uniform": -149.034965034965
+}

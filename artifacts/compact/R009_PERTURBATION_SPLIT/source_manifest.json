@@ -1,0 +1,16 @@
+{
+  "run_id": "R009",
+  "split_id": "D4_MEANINGLESS_STONE_PERTURBATION",
+  "input_paths": [
+    {
+      "path": "experiments\\results\\R006_NATURAL_HUMAN_SPLIT\\positions.jsonl",
+      "row_count": 5000
+    },
+    {
+      "path": "experiments\\results\\R007_NATURAL_ENGINE_SPLIT\\positions.jsonl",
+      "row_count": 2000
+    }
+  ],
+  "perturbation_rule": "deterministic low-adjacency single-stone perturbation",
+  "evidence_class": "perturbation split construction only"
+}

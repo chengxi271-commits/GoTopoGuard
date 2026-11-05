@@ -1,0 +1,45 @@
+{
+  "run_id": "R008",
+  "generated_at_unix": 1780754858,
+  "evidence_class": "adversarial replay split construction only",
+  "status": "done",
+  "split_id": "D3_ADVERSARIAL_GO_ATTACK",
+  "source_id": "go_attack_site_examples",
+  "source_url": "https://goattack.far.ai",
+  "target_game_count": 20,
+  "fetched_game_count": 20,
+  "position_count": 136,
+  "unique_signature_count": 136,
+  "valid_game_count": 20,
+  "status_counts": {
+    "valid": 20
+  },
+  "requested_lead_moves": [
+    80,
+    40,
+    20,
+    10,
+    5,
+    1,
+    0
+  ],
+  "requested_available_prefix_count": 140,
+  "unavailable_prefix_count": 0,
+  "duplicate_signature_skipped": 4,
+  "lead_counts": {
+    "80": 20,
+    "40": 20,
+    "20": 20,
+    "10": 20,
+    "5": 20,
+    "1": 20,
+    "0": 16
+  },
+  "failure_window_bucket_counts": {
+    "early_41_80": 20,
+    "early_21_40": 20,
+    "mid_6_20": 40,
+    "near_1_5": 40,
+    "terminal": 16
+  }
+}

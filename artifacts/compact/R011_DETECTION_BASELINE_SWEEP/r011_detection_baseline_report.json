@@ -1,0 +1,102 @@
+{
+  "run_id": "R011",
+  "generated_at_unix": 1780805674,
+  "evidence_class": "family-held-out R011 detection baseline sweep",
+  "status": "done",
+  "reason_not_done": null,
+  "dataset_counts": {
+    "D1": 5000,
+    "D2": 2000,
+    "D3": 136,
+    "D4": 7000,
+    "D5": 1008
+  },
+  "positive_family_counts": {
+    "go_attack_early_41_80": 20,
+    "go_attack_early_21_40": 20,
+    "go_attack_mid_6_20": 40,
+    "go_attack_near_1_5": 40,
+    "go_attack_terminal": 16,
+    "perturbation_low_adjacency": 7000,
+    "cyclic_enclosure": 144,
+    "cut_connect_corridor": 144,
+    "ladder_net_escape": 144,
+    "boundary_escape_route": 144,
+    "false_eye_enclosure": 144,
+    "shared_liberty_race": 144,
+    "pass_scoring_instability": 144
+  },
+  "row_count": 15144,
+  "metric_row_count": 130,
+  "search_feature_rows_attached": 14706,
+  "search_feature_path": "experiments/results/R011_KATAGO_SEARCH_FEATURES/position_search_features.jsonl",
+  "metamorphic_feature_rows_attached": 14706,
+  "metamorphic_feature_path": "experiments/results/R011_METAMORPHIC_SYMMETRY_FEATURES/position_metamorphic_features.jsonl",
+  "available_baselines_run": [
+    "B0_prior",
+    "B1_board_proxy_logreg",
+    "B1_engine_confidence_logreg",
+    "B2_search_brittleness_logreg",
+    "B3_topology_gbdt",
+    "B3_topology_logreg",
+    "B4_topology_plus_search_gbdt",
+    "B4_topology_plus_search_logreg",
+    "B5_topology_plus_search_plus_metamorphic_gbdt",
+    "B5_topology_plus_search_plus_metamorphic_logreg"
+  ],
+  "planned_baselines_not_run": [],
+  "feature_groups": {
+    "board_proxy": [
+      "black_count",
+      "white_count",
+      "empty_count",
+      "stone_count",
+      "stone_balance",
+      "edge_stone_count"
+    ],
+    "topology": [
+      "black_group_count",
+      "white_group_count",
+      "black_max_group_size",
+      "white_max_group_size",
+      "black_max_liberty_count",
+      "white_max_liberty_count",
+      "empty_region_count",
+      "enclosed_empty_region_count",
+      "black_bounded_empty_region_count",
+      "white_bounded_empty_region_count",
+      "black_articulation_count",
+      "white_articulation_count"
+    ],
+    "engine_confidence": [
+      "v256_winrate",
+      "v256_scoreLead",
+      "v256_scoreStdev",
+      "v256_top_visit_gap",
+      "v256_top_prior",
+      "v256_move_info_count",
+      "v256_visit_entropy",
+      "v256_prior_entropy",
+      "v256_policy_entropy"
+    ],
+    "search_brittleness": [
+      "budget_top_move_disagreement_64_256",
+      "budget_winrate_abs_delta_64_256",
+      "budget_score_abs_delta_64_256"
+    ],
+    "metamorphic_symmetry": [
+      "sym_v64_top_move_disagreement_rate",
+      "sym_v64_top_move_unique_count",
+      "sym_v64_winrate_abs_delta_mean",
+      "sym_v64_winrate_abs_delta_max",
+      "sym_v64_score_abs_delta_mean",
+      "sym_v64_score_abs_delta_max",
+      "sym_v256_top_move_disagreement_rate",
+      "sym_v256_top_move_unique_count",
+      "sym_v256_winrate_abs_delta_mean",
+      "sym_v256_winrate_abs_delta_max",
+      "sym_v256_score_abs_delta_mean",
+      "sym_v256_score_abs_delta_max"
+    ]
+  }
+}

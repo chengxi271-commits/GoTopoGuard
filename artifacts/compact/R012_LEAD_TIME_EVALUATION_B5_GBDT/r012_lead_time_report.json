@@ -1,0 +1,38 @@
+{
+  "run_id": "R012_B5_GBDT",
+  "generated_at_unix": 1780806047,
+  "evidence_class": "R012 D3 leave-one-adversarial-game-out lead-time evaluation",
+  "status": "done",
+  "detector_selection": "manual",
+  "detector_baseline": "B5_topology_plus_search_plus_metamorphic_gbdt",
+  "detector_summaries": {},
+  "feature_count": 42,
+  "d3_position_count": 136,
+  "heldout_game_count": 20,
+  "target_recalls": [
+    0.8,
+    0.9
+  ],
+  "summary_by_target_recall": {
+    "0.8": {
+      "heldout_game_count": 20,
+      "warning_detected_count": 20,
+      "no_warning_count": 0,
+      "mean_earliest_warning_lead_moves": 80.0,
+      "median_earliest_warning_lead_moves": 80.0,
+      "min_earliest_warning_lead_moves": 80,
+      "max_earliest_warning_lead_moves": 80
+    },
+    "0.9": {
+      "heldout_game_count": 20,
+      "warning_detected_count": 20,
+      "no_warning_count": 0,
+      "mean_earliest_warning_lead_moves": 80.0,
+      "median_earliest_warning_lead_moves": 80.0,
+      "min_earliest_warning_lead_moves": 80,
+      "max_earliest_warning_lead_moves": 80
+    }
+  },
+  "input_feature_rows": "experiments/results/R011_DETECTION_BASELINE_SWEEP/feature_rows.jsonl",
+  "input_metrics": "experiments/results/R011_DETECTION_BASELINE_SWEEP/family_heldout_metrics.jsonl"
+}

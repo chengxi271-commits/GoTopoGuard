@@ -1,0 +1,62 @@
+{
+  "environment": {
+    "implementation": "pure Python deterministic topology_features.py",
+    "machine_note": "local Codex Windows session; CPU timing only; no GPU or remote host used"
+  },
+  "board_count": 8144,
+  "board_level": {
+    "count": 8144,
+    "mean_ms": 1.2952994351669942,
+    "median_ms": 1.0624500000000001,
+    "p95_ms": 1.8753,
+    "max_ms": 26.0251
+  },
+  "by_split": {
+    "D1": {
+      "count": 5000,
+      "mean_ms": 1.18038326,
+      "median_ms": 1.0951499999999998,
+      "p95_ms": 1.708,
+      "max_ms": 3.0338
+    },
+    "D2": {
+      "count": 2000,
+      "mean_ms": 1.30307205,
+      "median_ms": 1.1267,
+      "p95_ms": 2.2942,
+      "max_ms": 7.9295
+    },
+    "D3": {
+      "count": 136,
+      "mean_ms": 9.84706838235294,
+      "median_ms": 8.9308,
+      "p95_ms": 21.1719,
+      "max_ms": 26.0251
+    },
+    "D5": {
+      "count": 1008,
+      "mean_ms": 0.6960881944444444,
+      "median_ms": 0.65085,
+      "p95_ms": 0.8878,
+      "max_ms": 1.2937
+    }
+  },
+  "exhaustive_candidate_upper_bound": {
+    "position_count": 200,
+    "mean_legal_candidates": 255.605,
+    "all_candidates_per_position": {
+      "count": 200,
+      "mean_ms": 273.040863,
+      "median_ms": 270.49175,
+      "p95_ms": 313.26,
+      "max_ms": 363.7349
+    },
+    "per_candidate_recompute": {
+      "count": 51121,
+      "mean_ms": 1.0677284168932533,
+      "median_ms": 1.0161,
+      "p95_ms": 1.5685,
+      "max_ms": 3.5217
+    }
+  }
+}

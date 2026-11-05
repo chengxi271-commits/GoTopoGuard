@@ -1,0 +1,18 @@
+{
+  "run_id": "R007",
+  "split_id": "D2_NATURAL_ENGINE_KATAGO",
+  "source_id": "katago_kata1_multi",
+  "source_url": null,
+  "source_urls": [
+    "https://katagoarchive.org/kata1/traininggames/2020-12-12sgfs.tar.bz2",
+    "https://katagoarchive.org/kata1/traininggames/2021-01-15sgfs.tar.bz2",
+    "https://katagoarchive.org/kata1/traininggames/2021-03-15sgfs.tar.bz2",
+    "https://katagoarchive.org/kata1/traininggames/2021-05-30sgfs.tar.bz2",
+    "https://katagoarchive.org/kata1/traininggames/2021-07-10sgfs.tar.bz2",
+    "https://katagoarchive.org/kata1/traininggames/2021-09-12sgfs.tar.bz2",
+    "https://katagoarchive.org/kata1/traininggames/2021-10-30sgfs.tar.bz2"
+  ],
+  "target_count": 2000,
+  "position_count": 2000,
+  "evidence_class": "split construction only"
+}

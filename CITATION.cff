@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "Please cite the accompanying PRICAI 2026 paper and identify the software version used; see README.md."
 type: software
-title: "GoTopoGuard: reference topology extractor"
-version: "0.1.0"
+title: "GoTopoGuard: PRICAI 2026 implementation and analysis artifacts"
+version: "0.2.0"
 date-released: "2026-11-06"
 license: Apache-2.0
 authors:

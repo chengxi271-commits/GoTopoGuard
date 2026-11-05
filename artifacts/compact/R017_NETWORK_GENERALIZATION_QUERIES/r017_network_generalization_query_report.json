@@ -1,0 +1,263 @@
+{
+  "run_id": "R017_MERGE",
+  "generated_at_unix": 1780861076,
+  "evidence_class": "R017 merged network-generalization query shards",
+  "status": "done",
+  "shard_count": 8,
+  "completed_query_count": 4288,
+  "expected_query_count": 4288,
+  "network_counts": {
+    "b18": 2144,
+    "b40": 2144
+  },
+  "shard_reports": [
+    {
+      "run_id": "R017_B18_SHARD_00",
+      "generated_at_unix": 1780860670,
+      "evidence_class": "R017 network-generalization KataGo query extraction",
+      "status": "done",
+      "network_alias": "b18",
+      "model": "external/engines/downloads/networks/katago/kata1-b18c384nbt-s9131461376-d4087399203.bin.gz",
+      "selected_position_count": 2144,
+      "shard_position_count": 545,
+      "dataset_counts": {
+        "D3": 136,
+        "D4": 1000,
+        "D5": 1008
+      },
+      "shard_dataset_counts": {
+        "D3": 38,
+        "D4": 254,
+        "D5": 253
+      },
+      "d4_limit": 1000,
+      "d5_limit": 0,
+      "visits": [
+        1024
+      ],
+      "shard_index": 0,
+      "shard_count": 4,
+      "expected_query_count": 545,
+      "completed_query_count": 545,
+      "newly_completed_query_count": 545,
+      "skipped_position_count": 219
+    },
+    {
+      "run_id": "R017_B18_SHARD_01",
+      "generated_at_unix": 1780860526,
+      "evidence_class": "R017 network-generalization KataGo query extraction",
+      "status": "done",
+      "network_alias": "b18",
+      "model": "external/engines/downloads/networks/katago/kata1-b18c384nbt-s9131461376-d4087399203.bin.gz",
+      "selected_position_count": 2144,
+      "shard_position_count": 489,
+      "dataset_counts": {
+        "D3": 136,
+        "D4": 1000,
+        "D5": 1008
+      },
+      "shard_dataset_counts": {
+        "D3": 31,
+        "D4": 227,
+        "D5": 231
+      },
+      "d4_limit": 1000,
+      "d5_limit": 0,
+      "visits": [
+        1024
+      ],
+      "shard_index": 1,
+      "shard_count": 4,
+      "expected_query_count": 489,
+      "completed_query_count": 489,
+      "newly_completed_query_count": 489,
+      "skipped_position_count": 219
+    },
+    {
+      "run_id": "R017_B18_SHARD_02",
+      "generated_at_unix": 1780860664,
+      "evidence_class": "R017 network-generalization KataGo query extraction",
+      "status": "done",
+      "network_alias": "b18",
+      "model": "external/engines/downloads/networks/katago/kata1-b18c384nbt-s9131461376-d4087399203.bin.gz",
+      "selected_position_count": 2144,
+      "shard_position_count": 552,
+      "dataset_counts": {
+        "D3": 136,
+        "D4": 1000,
+        "D5": 1008
+      },
+      "shard_dataset_counts": {
+        "D3": 36,
+        "D4": 248,
+        "D5": 268
+      },
+      "d4_limit": 1000,
+      "d5_limit": 0,
+      "visits": [
+        1024
+      ],
+      "shard_index": 2,
+      "shard_count": 4,
+      "expected_query_count": 552,
+      "completed_query_count": 552,
+      "newly_completed_query_count": 552,
+      "skipped_position_count": 219
+    },
+    {
+      "run_id": "R017_B18_SHARD_03",
+      "generated_at_unix": 1780860689,
+      "evidence_class": "R017 network-generalization KataGo query extraction",
+      "status": "done",
+      "network_alias": "b18",
+      "model": "external/engines/downloads/networks/katago/kata1-b18c384nbt-s9131461376-d4087399203.bin.gz",
+      "selected_position_count": 2144,
+      "shard_position_count": 558,
+      "dataset_counts": {
+        "D3": 136,
+        "D4": 1000,
+        "D5": 1008
+      },
+      "shard_dataset_counts": {
+        "D3": 31,
+        "D4": 271,
+        "D5": 256
+      },
+      "d4_limit": 1000,
+      "d5_limit": 0,
+      "visits": [
+        1024
+      ],
+      "shard_index": 3,
+      "shard_count": 4,
+      "expected_query_count": 558,
+      "completed_query_count": 558,
+      "newly_completed_query_count": 558,
+      "skipped_position_count": 219
+    },
+    {
+      "run_id": "R017_B40_SHARD_00",
+      "generated_at_unix": 1780860820,
+      "evidence_class": "R017 network-generalization KataGo query extraction",
+      "status": "done",
+      "network_alias": "b40",
+      "model": "external/engines/downloads/networks/katago/kata1-b40c256-s8326889472-d2025687566.bin.gz",
+      "selected_position_count": 2144,
+      "shard_position_count": 545,
+      "dataset_counts": {
+        "D3": 136,
+        "D4": 1000,
+        "D5": 1008
+      },
+      "shard_dataset_counts": {
+        "D3": 38,
+        "D4": 254,
+        "D5": 253
+      },
+      "d4_limit": 1000,
+      "d5_limit": 0,
+      "visits": [
+        1024
+      ],
+      "shard_index": 0,
+      "shard_count": 4,
+      "expected_query_count": 545,
+      "completed_query_count": 545,
+      "newly_completed_query_count": 545,
+      "skipped_position_count": 219
+    },
+    {
+      "run_id": "R017_B40_SHARD_01",
+      "generated_at_unix": 1780860749,
+      "evidence_class": "R017 network-generalization KataGo query extraction",
+      "status": "done",
+      "network_alias": "b40",
+      "model": "external/engines/downloads/networks/katago/kata1-b40c256-s8326889472-d2025687566.bin.gz",
+      "selected_position_count": 2144,
+      "shard_position_count": 489,
+      "dataset_counts": {
+        "D3": 136,
+        "D4": 1000,
+        "D5": 1008
+      },
+      "shard_dataset_counts": {
+        "D3": 31,
+        "D4": 227,
+        "D5": 231
+      },
+      "d4_limit": 1000,
+      "d5_limit": 0,
+      "visits": [
+        1024
+      ],
+      "shard_index": 1,
+      "shard_count": 4,
+      "expected_query_count": 489,
+      "completed_query_count": 489,
+      "newly_completed_query_count": 489,
+      "skipped_position_count": 219
+    },
+    {
+      "run_id": "R017_B40_SHARD_02",
+      "generated_at_unix": 1780860821,
+      "evidence_class": "R017 network-generalization KataGo query extraction",
+      "status": "done",
+      "network_alias": "b40",
+      "model": "external/engines/downloads/networks/katago/kata1-b40c256-s8326889472-d2025687566.bin.gz",
+      "selected_position_count": 2144,
+      "shard_position_count": 552,
+      "dataset_counts": {
+        "D3": 136,
+        "D4": 1000,
+        "D5": 1008
+      },
+      "shard_dataset_counts": {
+        "D3": 36,
+        "D4": 248,
+        "D5": 268
+      },
+      "d4_limit": 1000,
+      "d5_limit": 0,
+      "visits": [
+        1024
+      ],
+      "shard_index": 2,
+      "shard_count": 4,
+      "expected_query_count": 552,
+      "completed_query_count": 552,
+      "newly_completed_query_count": 552,
+      "skipped_position_count": 219
+    },
+    {
+      "run_id": "R017_B40_SHARD_03",
+      "generated_at_unix": 1780860826,
+      "evidence_class": "R017 network-generalization KataGo query extraction",
+      "status": "done",
+      "network_alias": "b40",
+      "model": "external/engines/downloads/networks/katago/kata1-b40c256-s8326889472-d2025687566.bin.gz",
+      "selected_position_count": 2144,
+      "shard_position_count": 558,
+      "dataset_counts": {
+        "D3": 136,
+        "D4": 1000,
+        "D5": 1008
+      },
+      "shard_dataset_counts": {
+        "D3": 31,
+        "D4": 271,
+        "D5": 256
+      },
+      "d4_limit": 1000,
+      "d5_limit": 0,
+      "visits": [
+        1024
+      ],
+      "shard_index": 3,
+      "shard_count": 4,
+      "expected_query_count": 558,
+      "completed_query_count": 558,
+      "newly_completed_query_count": 558,
+      "skipped_position_count": 219
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "run_id": "R010",
+  "split_id": "D5_TOPOLOGY_STRESS_TEMPLATES",
+  "source_id": "generated_topology_templates",
+  "families": [
+    "cyclic_enclosure",
+    "cut_connect_corridor",
+    "ladder_net_escape",
+    "boundary_escape_route",
+    "false_eye_enclosure",
+    "shared_liberty_race",
+    "pass_scoring_instability"
+  ],
+  "per_family_target": 144,
+  "template_proxies": {
+    "cyclic_enclosure": "closed same-color ring around enclosed empty region",
+    "cut_connect_corridor": "single articulation connector in same-color group",
+    "ladder_net_escape": "low-liberty group with diagonal escape pressure",
+    "boundary_escape_route": "low-liberty group touching board boundary",
+    "false_eye_enclosure": "enclosed same-color eye-like regions split by a connector",
+    "shared_liberty_race": "opposing groups with shared liberties",
+    "pass_scoring_instability": "adjacent enclosed territories plus dame-like corridor"
+  },
+  "evidence_class": "controlled topology stress construction only"
+}

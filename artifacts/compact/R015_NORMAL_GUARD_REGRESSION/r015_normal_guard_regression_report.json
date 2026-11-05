@@ -1,0 +1,24 @@
+{
+  "run_id": "R015",
+  "generated_at_unix": 1780843009,
+  "evidence_class": "R015 normal-position guard regression evaluation using 4096-visit same-engine relative oracle",
+  "status": "done",
+  "position_count": 6781,
+  "dataset_counts": {
+    "D1": 4781,
+    "D2": 2000
+  },
+  "methods": [
+    "G0_unguarded_256",
+    "G1_uniform_1024",
+    "G3_topology_fpr05",
+    "G4_topology_search_metamorphic_fpr05",
+    "S09_utility_b3_extra_p1p5"
+  ],
+  "summary_count": 15,
+  "oracle_boundary": "4096 visits is a same-engine relative oracle only, not ground truth.",
+  "s09_calibration_count": 1144,
+  "s09_training_oracle_agreement_rate": 0.8513986013986014,
+  "s09_training_trigger_rate": 0.7788461538461539,
+  "s09_threshold": -0.27190891716187154
+}

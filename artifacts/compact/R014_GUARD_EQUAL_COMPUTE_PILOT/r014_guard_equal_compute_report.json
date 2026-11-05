@@ -1,0 +1,24 @@
+{
+  "run_id": "R014",
+  "generated_at_unix": 1780812643,
+  "evidence_class": "R014 guard equal-compute pilot using 4096-visit same-engine relative oracle",
+  "status": "done",
+  "position_count": 1144,
+  "dataset_counts": {
+    "D3": 136,
+    "D5": 1008
+  },
+  "fpr_caps": [
+    0.01,
+    0.05,
+    0.1
+  ],
+  "guard_detectors": {
+    "G2_confidence": "B1_engine_confidence_logreg",
+    "G3_topology": "B3_topology_gbdt",
+    "G4_topology_search_metamorphic": "B5_topology_plus_search_plus_metamorphic_gbdt"
+  },
+  "baseline_boundary": "G1_uniform_1024 is a stronger uniform-extra-visits baseline and may spend more visits than sparse guards; total visits are reported for every method.",
+  "oracle_boundary": "4096 visits is a same-engine relative oracle only, not ground truth.",
+  "summary_count": 33
+}

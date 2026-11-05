@@ -1,0 +1,20 @@
+{
+  "run_id": "R014_BUDGET_QUERIES",
+  "generated_at_unix": 1780811570,
+  "evidence_class": "R014 high-budget KataGo query extraction for guard equal-compute pilot",
+  "status": "done",
+  "position_count": 1144,
+  "dataset_counts": {
+    "D3": 136,
+    "D5": 1008
+  },
+  "visits": [
+    1024,
+    4096
+  ],
+  "expected_query_count": 2288,
+  "completed_query_count": 2288,
+  "newly_completed_query_count": 2288,
+  "position_feature_count": 1144,
+  "oracle_boundary": "4096 visits is a same-engine relative oracle only, not ground truth"
+}

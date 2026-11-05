@@ -1,0 +1,21 @@
+{
+  "run_id": "R016_ANALYSIS",
+  "generated_at_unix": 1780858678,
+  "evidence_class": "R016 budget-generalization analysis using 8192-visit same-engine relative oracle",
+  "status": "done",
+  "position_count": 2144,
+  "expected_position_count": 2144,
+  "dataset_counts": {
+    "D3": 136,
+    "D4": 1000,
+    "D5": 1008
+  },
+  "budgets": [
+    64,
+    256,
+    1024,
+    8192
+  ],
+  "reference_budget": 8192,
+  "oracle_boundary": "8192 visits is a stronger same-engine relative oracle only, not ground truth."
+}

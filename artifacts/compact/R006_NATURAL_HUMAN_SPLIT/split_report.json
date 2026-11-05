@@ -1,0 +1,29 @@
+{
+  "run_id": "R006",
+  "generated_at_unix": 1780754258,
+  "evidence_class": "split construction only",
+  "status": "done",
+  "split_id": "D1_NATURAL_HUMAN_JGDB",
+  "source_id": "jgdb",
+  "source_url": "https://data.pjreddie.com/files/jgdb.tar.gz",
+  "target_count": 5000,
+  "position_count": 5000,
+  "window_target_counts": {
+    "early_40_80": 1667,
+    "mid_80_140": 1667,
+    "late_140_220": 1666
+  },
+  "window_counts": {
+    "early_40_80": 1667,
+    "mid_80_140": 1667,
+    "late_140_220": 1666
+  },
+  "scanned_sgf_count": 2543,
+  "source_status_counts": {
+    "accepted_games_with_positions": 2542,
+    "duplicate_prefix_signature_skipped": 8,
+    "parse_or_prefix_error": 1
+  },
+  "unique_signature_count": 5000,
+  "katago_query_compatible_count": 4781
+}

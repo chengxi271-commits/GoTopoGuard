@@ -1,0 +1,403 @@
+[
+  {
+    "path": "experiments/scripts/r001_sgf_replay_smoke.py",
+    "source": "experiments/scripts/r001_sgf_replay_smoke.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r002_position_signature_validation.py",
+    "source": "experiments/scripts/r002_position_signature_validation.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r003_katago_schema_smoke.py",
+    "source": "experiments/scripts/r003_katago_schema_smoke.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r004_katago_100_position_smoke.py",
+    "source": "experiments/scripts/r004_katago_100_position_smoke.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r005_topology_feature_unit_report.py",
+    "source": "experiments/scripts/r005_topology_feature_unit_report.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r006_r007_natural_split_build.py",
+    "source": "experiments/scripts/r006_r007_natural_split_build.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r008_adversarial_replay_split.py",
+    "source": "experiments/scripts/r008_adversarial_replay_split.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r009_perturbation_split.py",
+    "source": "experiments/scripts/r009_perturbation_split.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r010_topology_stress_generation.py",
+    "source": "experiments/scripts/r010_topology_stress_generation.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r011_detection_baseline_sweep.py",
+    "source": "experiments/scripts/r011_detection_baseline_sweep.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r011_katago_search_features.py",
+    "source": "experiments/scripts/r011_katago_search_features.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r011_merge_metamorphic_shards.py",
+    "source": "experiments/scripts/r011_merge_metamorphic_shards.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r011_metamorphic_symmetry_features.py",
+    "source": "experiments/scripts/r011_metamorphic_symmetry_features.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r012_lead_time_evaluation.py",
+    "source": "experiments/scripts/r012_lead_time_evaluation.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r013_natural_false_positive_audit.py",
+    "source": "experiments/scripts/r013_natural_false_positive_audit.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r013_operating_point_tradeoff.py",
+    "source": "experiments/scripts/r013_operating_point_tradeoff.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r014_guard_budget_queries.py",
+    "source": "experiments/scripts/r014_guard_budget_queries.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r014_guard_equal_compute_pilot.py",
+    "source": "experiments/scripts/r014_guard_equal_compute_pilot.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r014b_utility_guard_redesign.py",
+    "source": "experiments/scripts/r014b_utility_guard_redesign.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r014c_utility_guard_model_sweep.py",
+    "source": "experiments/scripts/r014c_utility_guard_model_sweep.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r015_merge_budget_shards.py",
+    "source": "experiments/scripts/r015_merge_budget_shards.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r015_normal_budget_queries.py",
+    "source": "experiments/scripts/r015_normal_budget_queries.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r015_normal_guard_regression_eval.py",
+    "source": "experiments/scripts/r015_normal_guard_regression_eval.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r015b_normal_aware_utility_guard.py",
+    "source": "experiments/scripts/r015b_normal_aware_utility_guard.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r016_budget_generalization_analysis.py",
+    "source": "experiments/scripts/r016_budget_generalization_analysis.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r016_budget_generalization_queries.py",
+    "source": "experiments/scripts/r016_budget_generalization_queries.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r016_merge_budget_shards.py",
+    "source": "experiments/scripts/r016_merge_budget_shards.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r017_merge_network_shards.py",
+    "source": "experiments/scripts/r017_merge_network_shards.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r017_network_generalization_analysis.py",
+    "source": "experiments/scripts/r017_network_generalization_analysis.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r017_network_generalization_queries.py",
+    "source": "experiments/scripts/r017_network_generalization_queries.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r017_plot_network_generalization.py",
+    "source": "experiments/scripts/r017_plot_network_generalization.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r019r1_main_adversary_evaluation.py",
+    "source": "experiments/scripts/r019r1_main_adversary_evaluation.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r019r1_trained_adversary_match.py",
+    "source": "experiments/scripts/r019r1_trained_adversary_match.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/r020_cross_engine_gtp_transfer.py",
+    "source": "experiments/scripts/r020_cross_engine_gtp_transfer.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "Removed fixed workstation Conda/library paths; use selected interpreter and caller environment."
+  },
+  {
+    "path": "experiments/scripts/r020_cross_engine_toporisk_analysis.py",
+    "source": "experiments/scripts/r020_cross_engine_toporisk_analysis.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "Import extracted guard_models helpers instead of unused live-game policies."
+  },
+  {
+    "path": "tests/test_r001_sgf_replay_smoke.py",
+    "source": "tests/test_r001_sgf_replay_smoke.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r002_position_signature_validation.py",
+    "source": "tests/test_r002_position_signature_validation.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r003_katago_schema_smoke.py",
+    "source": "tests/test_r003_katago_schema_smoke.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r004_katago_100_position_smoke.py",
+    "source": "tests/test_r004_katago_100_position_smoke.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r005_topology_features.py",
+    "source": "tests/test_r005_topology_features.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r006_r007_natural_split_build.py",
+    "source": "tests/test_r006_r007_natural_split_build.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r008_adversarial_replay_split.py",
+    "source": "tests/test_r008_adversarial_replay_split.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r009_perturbation_split.py",
+    "source": "tests/test_r009_perturbation_split.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r010_topology_stress_generation.py",
+    "source": "tests/test_r010_topology_stress_generation.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r011_detection_baseline_sweep.py",
+    "source": "tests/test_r011_detection_baseline_sweep.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r011_katago_search_features.py",
+    "source": "tests/test_r011_katago_search_features.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r011_merge_metamorphic_shards.py",
+    "source": "tests/test_r011_merge_metamorphic_shards.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r011_metamorphic_symmetry_features.py",
+    "source": "tests/test_r011_metamorphic_symmetry_features.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r012_lead_time_evaluation.py",
+    "source": "tests/test_r012_lead_time_evaluation.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r013_natural_false_positive_audit.py",
+    "source": "tests/test_r013_natural_false_positive_audit.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r013_operating_point_tradeoff.py",
+    "source": "tests/test_r013_operating_point_tradeoff.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r014_guard_budget_queries.py",
+    "source": "tests/test_r014_guard_budget_queries.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r014_guard_equal_compute_pilot.py",
+    "source": "tests/test_r014_guard_equal_compute_pilot.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r014b_utility_guard_redesign.py",
+    "source": "tests/test_r014b_utility_guard_redesign.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r014c_utility_guard_model_sweep.py",
+    "source": "tests/test_r014c_utility_guard_model_sweep.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r015_merge_budget_shards.py",
+    "source": "tests/test_r015_merge_budget_shards.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r015_normal_budget_queries.py",
+    "source": "tests/test_r015_normal_budget_queries.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r015_normal_guard_regression_eval.py",
+    "source": "tests/test_r015_normal_guard_regression_eval.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r015b_normal_aware_utility_guard.py",
+    "source": "tests/test_r015b_normal_aware_utility_guard.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r016_budget_generalization_analysis.py",
+    "source": "tests/test_r016_budget_generalization_analysis.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r016_budget_generalization_queries.py",
+    "source": "tests/test_r016_budget_generalization_queries.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r017_network_generalization_analysis.py",
+    "source": "tests/test_r017_network_generalization_analysis.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "tests/test_r017_network_generalization_queries.py",
+    "source": "tests/test_r017_network_generalization_queries.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "src/gotopobench/topology_features.py",
+    "source": "src/gotopobench/topology_features.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "experiments/scripts/guard_models.py",
+    "source": "experiments/scripts/r018_guard_aware_hardcoded_attacks.py",
+    "changes": "Extracted six unchanged scoring helpers; imports made independent of optional live-game code."
+  },
+  {
+    "path": "analysis/r022_original_candidate.py",
+    "source": "paper/scripts/strong_accept_revision_assets.py",
+    "origin": "original PRICAI working tree, R-series",
+    "changes": "line-ending normalization"
+  },
+  {
+    "path": "analysis/r022_controls.py",
+    "source": "paper/scripts/strong_accept_revision_assets.py",
+    "origin": "original PRICAI working tree",
+    "changes": "Extracted numerical routines unchanged; adjusted repository root, omitted manuscript writing and exploratory game summaries."
+  }
+]

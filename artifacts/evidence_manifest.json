@@ -1,0 +1,604 @@
+{
+  "asset": "GoTopoGuard-PRICAI2026-evidence-v0.2.0.zip",
+  "files": [
+    {
+      "path": "experiments/results/R006_NATURAL_HUMAN_SPLIT/metadata.jsonl",
+      "source": "experiments/results/R006_NATURAL_HUMAN_SPLIT/positions.jsonl",
+      "rows": 5000,
+      "bytes": 2429781,
+      "board_arrays_removed": true
+    },
+    {
+      "path": "experiments/results/R006_NATURAL_HUMAN_SPLIT/source_manifest.json",
+      "source": "experiments/results/R006_NATURAL_HUMAN_SPLIT/source_manifest.json",
+      "rows": null,
+      "bytes": 245,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R006_NATURAL_HUMAN_SPLIT/split_report.json",
+      "source": "experiments/results/R006_NATURAL_HUMAN_SPLIT/split_report.json",
+      "rows": null,
+      "bytes": 763,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R007_NATURAL_ENGINE_SPLIT/metadata.jsonl",
+      "source": "experiments/results/R007_NATURAL_ENGINE_SPLIT/positions.jsonl",
+      "rows": 2000,
+      "bytes": 1275850,
+      "board_arrays_removed": true
+    },
+    {
+      "path": "experiments/results/R007_NATURAL_ENGINE_SPLIT/source_manifest.json",
+      "source": "experiments/results/R007_NATURAL_ENGINE_SPLIT/source_manifest.json",
+      "rows": null,
+      "bytes": 776,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R007_NATURAL_ENGINE_SPLIT/split_report.json",
+      "source": "experiments/results/R007_NATURAL_ENGINE_SPLIT/split_report.json",
+      "rows": null,
+      "bytes": 1457,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R008_ADVERSARIAL_REPLAY_SPLIT/metadata.jsonl",
+      "source": "experiments/results/R008_ADVERSARIAL_REPLAY_SPLIT/positions.jsonl",
+      "rows": 136,
+      "bytes": 97698,
+      "board_arrays_removed": true
+    },
+    {
+      "path": "experiments/results/R008_ADVERSARIAL_REPLAY_SPLIT/source_manifest.json",
+      "source": "experiments/results/R008_ADVERSARIAL_REPLAY_SPLIT/source_manifest.json",
+      "rows": null,
+      "bytes": 677,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R008_ADVERSARIAL_REPLAY_SPLIT/split_report.json",
+      "source": "experiments/results/R008_ADVERSARIAL_REPLAY_SPLIT/split_report.json",
+      "rows": null,
+      "bytes": 913,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R009_PERTURBATION_SPLIT/metadata.jsonl",
+      "source": "experiments/results/R009_PERTURBATION_SPLIT/perturbation_pairs.jsonl",
+      "rows": 7000,
+      "bytes": 7348486,
+      "board_arrays_removed": true
+    },
+    {
+      "path": "experiments/results/R009_PERTURBATION_SPLIT/source_manifest.json",
+      "source": "experiments/results/R009_PERTURBATION_SPLIT/source_manifest.json",
+      "rows": null,
+      "bytes": 474,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R009_PERTURBATION_SPLIT/split_report.json",
+      "source": "experiments/results/R009_PERTURBATION_SPLIT/split_report.json",
+      "rows": null,
+      "bytes": 741,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R010_TOPOLOGY_STRESS_SPLIT/positions.jsonl",
+      "source": "experiments/results/R010_TOPOLOGY_STRESS_SPLIT/positions.jsonl",
+      "rows": 1008,
+      "bytes": 1421012,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R010_TOPOLOGY_STRESS_SPLIT/source_manifest.json",
+      "source": "experiments/results/R010_TOPOLOGY_STRESS_SPLIT/source_manifest.json",
+      "rows": null,
+      "bytes": 1007,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R010_TOPOLOGY_STRESS_SPLIT/split_report.json",
+      "source": "experiments/results/R010_TOPOLOGY_STRESS_SPLIT/split_report.json",
+      "rows": null,
+      "bytes": 856,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R011_DETECTION_BASELINE_SWEEP/family_heldout_metrics.jsonl",
+      "source": "experiments/results/R011_DETECTION_BASELINE_SWEEP/family_heldout_metrics.jsonl",
+      "rows": 130,
+      "bytes": 42301,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R011_DETECTION_BASELINE_SWEEP/feature_rows.jsonl",
+      "source": "experiments/results/R011_DETECTION_BASELINE_SWEEP/feature_rows.jsonl",
+      "rows": 15144,
+      "bytes": 31324632,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R011_DETECTION_BASELINE_SWEEP/r011_detection_baseline_report.json",
+      "source": "experiments/results/R011_DETECTION_BASELINE_SWEEP/r011_detection_baseline_report.json",
+      "rows": null,
+      "bytes": 3074,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R011_KATAGO_SEARCH_FEATURES/position_search_features.jsonl",
+      "source": "experiments/results/R011_KATAGO_SEARCH_FEATURES/position_search_features.jsonl",
+      "rows": 14706,
+      "bytes": 12334263,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R011_KATAGO_SEARCH_FEATURES/query_search_features.jsonl",
+      "source": "experiments/results/R011_KATAGO_SEARCH_FEATURES/query_search_features.jsonl",
+      "rows": 29412,
+      "bytes": 18070637,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R011_KATAGO_SEARCH_FEATURES/r011_katago_search_feature_report.json",
+      "source": "experiments/results/R011_KATAGO_SEARCH_FEATURES/r011_katago_search_feature_report.json",
+      "rows": null,
+      "bytes": 3215,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R011_METAMORPHIC_SYMMETRY_FEATURES/position_metamorphic_features.jsonl",
+      "source": "experiments/results/R011_METAMORPHIC_SYMMETRY_FEATURES/position_metamorphic_features.jsonl",
+      "rows": 14706,
+      "bytes": 11305851,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R011_METAMORPHIC_SYMMETRY_FEATURES/r011_metamorphic_symmetry_feature_report.json",
+      "source": "experiments/results/R011_METAMORPHIC_SYMMETRY_FEATURES/r011_metamorphic_symmetry_feature_report.json",
+      "rows": null,
+      "bytes": 3643,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R011_METAMORPHIC_SYMMETRY_FEATURES/symmetry_query_features.jsonl",
+      "source": "experiments/results/R011_METAMORPHIC_SYMMETRY_FEATURES/symmetry_query_features.jsonl",
+      "rows": 205884,
+      "bytes": 129139636,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R012_LEAD_TIME_EVALUATION/lead_time_records.jsonl",
+      "source": "experiments/results/R012_LEAD_TIME_EVALUATION/lead_time_records.jsonl",
+      "rows": 40,
+      "bytes": 16686,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R012_LEAD_TIME_EVALUATION/r012_lead_time_report.json",
+      "source": "experiments/results/R012_LEAD_TIME_EVALUATION/r012_lead_time_report.json",
+      "rows": null,
+      "bytes": 3237,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R012_LEAD_TIME_EVALUATION_B5_GBDT/lead_time_records.jsonl",
+      "source": "experiments/results/R012_LEAD_TIME_EVALUATION_B5_GBDT/lead_time_records.jsonl",
+      "rows": 40,
+      "bytes": 18168,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R012_LEAD_TIME_EVALUATION_B5_GBDT/r012_lead_time_report.json",
+      "source": "experiments/results/R012_LEAD_TIME_EVALUATION_B5_GBDT/r012_lead_time_report.json",
+      "rows": null,
+      "bytes": 1267,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R013_NATURAL_FALSE_POSITIVE_AUDIT/natural_false_positive_records.jsonl",
+      "source": "experiments/results/R013_NATURAL_FALSE_POSITIVE_AUDIT/natural_false_positive_records.jsonl",
+      "rows": 60,
+      "bytes": 21478,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R013_NATURAL_FALSE_POSITIVE_AUDIT/r013_natural_false_positive_report.json",
+      "source": "experiments/results/R013_NATURAL_FALSE_POSITIVE_AUDIT/r013_natural_false_positive_report.json",
+      "rows": null,
+      "bytes": 3197,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R013_NATURAL_FALSE_POSITIVE_AUDIT/top_false_positive_candidates.jsonl",
+      "source": "experiments/results/R013_NATURAL_FALSE_POSITIVE_AUDIT/top_false_positive_candidates.jsonl",
+      "rows": 250,
+      "bytes": 77028,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R013_NATURAL_FALSE_POSITIVE_AUDIT_B5_GBDT/natural_false_positive_records.jsonl",
+      "source": "experiments/results/R013_NATURAL_FALSE_POSITIVE_AUDIT_B5_GBDT/natural_false_positive_records.jsonl",
+      "rows": 60,
+      "bytes": 23651,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R013_NATURAL_FALSE_POSITIVE_AUDIT_B5_GBDT/r013_natural_false_positive_report.json",
+      "source": "experiments/results/R013_NATURAL_FALSE_POSITIVE_AUDIT_B5_GBDT/r013_natural_false_positive_report.json",
+      "rows": null,
+      "bytes": 1231,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R013_NATURAL_FALSE_POSITIVE_AUDIT_B5_GBDT/top_false_positive_candidates.jsonl",
+      "source": "experiments/results/R013_NATURAL_FALSE_POSITIVE_AUDIT_B5_GBDT/top_false_positive_candidates.jsonl",
+      "rows": 250,
+      "bytes": 85629,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R013_OPERATING_POINT_TRADEOFF/operating_point_records.jsonl",
+      "source": "experiments/results/R013_OPERATING_POINT_TRADEOFF/operating_point_records.jsonl",
+      "rows": 600,
+      "bytes": 311317,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R013_OPERATING_POINT_TRADEOFF/r013_operating_point_tradeoff_report.json",
+      "source": "experiments/results/R013_OPERATING_POINT_TRADEOFF/r013_operating_point_tradeoff_report.json",
+      "rows": null,
+      "bytes": 2813,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R014_GUARD_BUDGET_QUERIES/position_budget_features.jsonl",
+      "source": "experiments/results/R014_GUARD_BUDGET_QUERIES/position_budget_features.jsonl",
+      "rows": 1144,
+      "bytes": 842053,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R014_GUARD_BUDGET_QUERIES/query_budget_features.jsonl",
+      "source": "experiments/results/R014_GUARD_BUDGET_QUERIES/query_budget_features.jsonl",
+      "rows": 2288,
+      "bytes": 1561823,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R014_GUARD_BUDGET_QUERIES/r014_guard_budget_query_report.json",
+      "source": "experiments/results/R014_GUARD_BUDGET_QUERIES/r014_guard_budget_query_report.json",
+      "rows": null,
+      "bytes": 538,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R014_GUARD_EQUAL_COMPUTE_PILOT/guard_method_records.jsonl",
+      "source": "experiments/results/R014_GUARD_EQUAL_COMPUTE_PILOT/guard_method_records.jsonl",
+      "rows": 12584,
+      "bytes": 3054943,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R014_GUARD_EQUAL_COMPUTE_PILOT/guard_summary_records.jsonl",
+      "source": "experiments/results/R014_GUARD_EQUAL_COMPUTE_PILOT/guard_summary_records.jsonl",
+      "rows": 33,
+      "bytes": 13880,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R014_GUARD_EQUAL_COMPUTE_PILOT/r014_guard_equal_compute_report.json",
+      "source": "experiments/results/R014_GUARD_EQUAL_COMPUTE_PILOT/r014_guard_equal_compute_report.json",
+      "rows": null,
+      "bytes": 806,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R014B_UTILITY_GUARD_REDESIGN/r014b_utility_guard_report.json",
+      "source": "experiments/results/R014B_UTILITY_GUARD_REDESIGN/r014b_utility_guard_report.json",
+      "rows": null,
+      "bytes": 2678,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R014B_UTILITY_GUARD_REDESIGN/utility_guard_method_records.jsonl",
+      "source": "experiments/results/R014B_UTILITY_GUARD_REDESIGN/utility_guard_method_records.jsonl",
+      "rows": 10296,
+      "bytes": 5974379,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R014B_UTILITY_GUARD_REDESIGN/utility_guard_summary_records.jsonl",
+      "source": "experiments/results/R014B_UTILITY_GUARD_REDESIGN/utility_guard_summary_records.jsonl",
+      "rows": 27,
+      "bytes": 11772,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R014C_UTILITY_GUARD_MODEL_SWEEP/r014c_utility_guard_model_sweep_report.json",
+      "source": "experiments/results/R014C_UTILITY_GUARD_MODEL_SWEEP/r014c_utility_guard_model_sweep_report.json",
+      "rows": null,
+      "bytes": 3716,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R014C_UTILITY_GUARD_MODEL_SWEEP/utility_sweep_method_records.jsonl",
+      "source": "experiments/results/R014C_UTILITY_GUARD_MODEL_SWEEP/utility_sweep_method_records.jsonl",
+      "rows": 20592,
+      "bytes": 11760958,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R014C_UTILITY_GUARD_MODEL_SWEEP/utility_sweep_summary_records.jsonl",
+      "source": "experiments/results/R014C_UTILITY_GUARD_MODEL_SWEEP/utility_sweep_summary_records.jsonl",
+      "rows": 54,
+      "bytes": 23385,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R015_NORMAL_BUDGET_QUERIES/position_budget_features.jsonl",
+      "source": "experiments/results/R015_NORMAL_BUDGET_QUERIES/position_budget_features.jsonl",
+      "rows": 6781,
+      "bytes": 4951208,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R015_NORMAL_BUDGET_QUERIES/query_budget_features.jsonl",
+      "source": "experiments/results/R015_NORMAL_BUDGET_QUERIES/query_budget_features.jsonl",
+      "rows": 13562,
+      "bytes": 9030867,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R015_NORMAL_BUDGET_QUERIES/r015_normal_budget_query_report.json",
+      "source": "experiments/results/R015_NORMAL_BUDGET_QUERIES/r015_normal_budget_query_report.json",
+      "rows": null,
+      "bytes": 369,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R015_NORMAL_GUARD_REGRESSION/normal_guard_method_records.jsonl",
+      "source": "experiments/results/R015_NORMAL_GUARD_REGRESSION/normal_guard_method_records.jsonl",
+      "rows": 33905,
+      "bytes": 10073215,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R015_NORMAL_GUARD_REGRESSION/normal_guard_summary_records.jsonl",
+      "source": "experiments/results/R015_NORMAL_GUARD_REGRESSION/normal_guard_summary_records.jsonl",
+      "rows": 15,
+      "bytes": 6706,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R015_NORMAL_GUARD_REGRESSION/r015_normal_guard_regression_report.json",
+      "source": "experiments/results/R015_NORMAL_GUARD_REGRESSION/r015_normal_guard_regression_report.json",
+      "rows": null,
+      "bytes": 748,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R015B_NORMAL_AWARE_UTILITY_GUARD/normal_aware_method_records.jsonl",
+      "source": "experiments/results/R015B_NORMAL_AWARE_UTILITY_GUARD/normal_aware_method_records.jsonl",
+      "rows": 87175,
+      "bytes": 51096519,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R015B_NORMAL_AWARE_UTILITY_GUARD/normal_aware_summary_records.jsonl",
+      "source": "experiments/results/R015B_NORMAL_AWARE_UTILITY_GUARD/normal_aware_summary_records.jsonl",
+      "rows": 77,
+      "bytes": 33772,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R015B_NORMAL_AWARE_UTILITY_GUARD/r015b_normal_aware_utility_guard_report.json",
+      "source": "experiments/results/R015B_NORMAL_AWARE_UTILITY_GUARD/r015b_normal_aware_utility_guard_report.json",
+      "rows": null,
+      "bytes": 3522,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R016_BUDGET_GENERALIZATION_ANALYSIS/budget_stability_records.jsonl",
+      "source": "experiments/results/R016_BUDGET_GENERALIZATION_ANALYSIS/budget_stability_records.jsonl",
+      "rows": 2144,
+      "bytes": 2151734,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R016_BUDGET_GENERALIZATION_ANALYSIS/budget_stability_summary.jsonl",
+      "source": "experiments/results/R016_BUDGET_GENERALIZATION_ANALYSIS/budget_stability_summary.jsonl",
+      "rows": 17,
+      "bytes": 17037,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R016_BUDGET_GENERALIZATION_ANALYSIS/r016_budget_generalization_analysis_report.json",
+      "source": "experiments/results/R016_BUDGET_GENERALIZATION_ANALYSIS/r016_budget_generalization_analysis_report.json",
+      "rows": null,
+      "bytes": 511,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R016_BUDGET_GENERALIZATION_QUERIES/position_budget_features.jsonl",
+      "source": "experiments/results/R016_BUDGET_GENERALIZATION_QUERIES/position_budget_features.jsonl",
+      "rows": 2144,
+      "bytes": 1901978,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R016_BUDGET_GENERALIZATION_QUERIES/query_budget_features.jsonl",
+      "source": "experiments/results/R016_BUDGET_GENERALIZATION_QUERIES/query_budget_features.jsonl",
+      "rows": 4288,
+      "bytes": 2917751,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R016_BUDGET_GENERALIZATION_QUERIES/r016_budget_generalization_query_report.json",
+      "source": "experiments/results/R016_BUDGET_GENERALIZATION_QUERIES/r016_budget_generalization_query_report.json",
+      "rows": null,
+      "bytes": 4000,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R017_NETWORK_GENERALIZATION_ANALYSIS/network_stability_records.jsonl",
+      "source": "experiments/results/R017_NETWORK_GENERALIZATION_ANALYSIS/network_stability_records.jsonl",
+      "rows": 4288,
+      "bytes": 1276695,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R017_NETWORK_GENERALIZATION_ANALYSIS/network_stability_summary.jsonl",
+      "source": "experiments/results/R017_NETWORK_GENERALIZATION_ANALYSIS/network_stability_summary.jsonl",
+      "rows": 34,
+      "bytes": 10058,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R017_NETWORK_GENERALIZATION_ANALYSIS/r017_network_generalization_analysis_report.json",
+      "source": "experiments/results/R017_NETWORK_GENERALIZATION_ANALYSIS/r017_network_generalization_analysis_report.json",
+      "rows": null,
+      "bytes": 402,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R017_NETWORK_GENERALIZATION_QUERIES/query_network_features.jsonl",
+      "source": "experiments/results/R017_NETWORK_GENERALIZATION_QUERIES/query_network_features.jsonl",
+      "rows": 4288,
+      "bytes": 3027321,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R017_NETWORK_GENERALIZATION_QUERIES/r017_network_generalization_query_report.json",
+      "source": "experiments/results/R017_NETWORK_GENERALIZATION_QUERIES/r017_network_generalization_query_report.json",
+      "rows": null,
+      "bytes": 7321,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R019R1_MAIN_CYCLIC_FULL_1000GPM_T128/summary.json",
+      "source": "experiments/results/R019R1_MAIN_CYCLIC_FULL_1000GPM_T128/summary.json",
+      "rows": null,
+      "bytes": 281237,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R020_CROSS_ENGINE_TOPO_ANALYSIS/r020_cross_engine_toporisk_analysis_report.json",
+      "source": "experiments/results/R020_CROSS_ENGINE_TOPO_ANALYSIS/r020_cross_engine_toporisk_analysis_report.json",
+      "rows": null,
+      "bytes": 1349,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R020_CROSS_ENGINE_TOPO_ANALYSIS/r020_toporisk_engine_pair_summary.jsonl",
+      "source": "experiments/results/R020_CROSS_ENGINE_TOPO_ANALYSIS/r020_toporisk_engine_pair_summary.jsonl",
+      "rows": 1,
+      "bytes": 492,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R020_CROSS_ENGINE_TOPO_ANALYSIS/r020_toporisk_joined_records.jsonl",
+      "source": "experiments/results/R020_CROSS_ENGINE_TOPO_ANALYSIS/r020_toporisk_joined_records.jsonl",
+      "rows": 4288,
+      "bytes": 3997426,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R020_CROSS_ENGINE_TOPO_ANALYSIS/r020_toporisk_transfer_summary.jsonl",
+      "source": "experiments/results/R020_CROSS_ENGINE_TOPO_ANALYSIS/r020_toporisk_transfer_summary.jsonl",
+      "rows": 70,
+      "bytes": 30701,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R020_ELF_FULL_GPU0_R1600_WAIT_R019/cross_engine_records.jsonl",
+      "source": "experiments/results/R020_ELF_FULL_GPU0_R1600_WAIT_R019/cross_engine_records.jsonl",
+      "rows": 2144,
+      "bytes": 962822,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R020_ELF_FULL_GPU0_R1600_WAIT_R019/r020_cross_engine_transfer_report.json",
+      "source": "experiments/results/R020_ELF_FULL_GPU0_R1600_WAIT_R019/r020_cross_engine_transfer_report.json",
+      "rows": null,
+      "bytes": 37569,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R020_LEELA_FULL_CPU16_V512/cross_engine_records.jsonl",
+      "source": "experiments/results/R020_LEELA_FULL_CPU16_V512/cross_engine_records.jsonl",
+      "rows": 2144,
+      "bytes": 958834,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R020_LEELA_FULL_CPU16_V512/r020_cross_engine_transfer_report.json",
+      "source": "experiments/results/R020_LEELA_FULL_CPU16_V512/r020_cross_engine_transfer_report.json",
+      "rows": null,
+      "bytes": 36607,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R022_STRONG_ACCEPT_AUDIT/enriched_feature_rows.jsonl",
+      "source": "experiments/results/R022_STRONG_ACCEPT_AUDIT/enriched_feature_rows.jsonl",
+      "rows": 15144,
+      "bytes": 36685002,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R022_STRONG_ACCEPT_AUDIT/guard_significance_pairs.jsonl",
+      "source": "experiments/results/R022_STRONG_ACCEPT_AUDIT/guard_significance_pairs.jsonl",
+      "rows": 1144,
+      "bytes": 98600,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R022_STRONG_ACCEPT_AUDIT/mechanism_holdout_metrics.jsonl",
+      "source": "experiments/results/R022_STRONG_ACCEPT_AUDIT/mechanism_holdout_metrics.jsonl",
+      "rows": 8,
+      "bytes": 2330,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R022_STRONG_ACCEPT_AUDIT/r022_strong_accept_audit_report.json",
+      "source": "experiments/results/R022_STRONG_ACCEPT_AUDIT/r022_strong_accept_audit_report.json",
+      "rows": null,
+      "bytes": 7989,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R022_STRONG_ACCEPT_AUDIT/strict_control_family_metrics.jsonl",
+      "source": "experiments/results/R022_STRONG_ACCEPT_AUDIT/strict_control_family_metrics.jsonl",
+      "rows": 39,
+      "bytes": 8842,
+      "board_arrays_removed": false
+    },
+    {
+      "path": "experiments/results/R022_STRONG_ACCEPT_AUDIT/strict_control_matched_metrics.jsonl",
+      "source": "experiments/results/R022_STRONG_ACCEPT_AUDIT/strict_control_matched_metrics.jsonl",
+      "rows": 26,
+      "bytes": 6260,
+      "board_arrays_removed": false
+    }
+  ],
+  "path_redactions": {
+    "sgf": 1002,
+    "config": 1,
+    "log": 1,
+    "stdout_log": 1,
+    "root": 2,
+    "records_path": 2,
+    "report_path": 2,
+    "engine_root": 4288,
+    "command": 5,
+    "cwd": 1,
+    "OCL_ICD_VENDORS": 2,
+    "LD_LIBRARY_PATH": 1,
+    "PYTHONPATH": 1
+  },
+  "sha256": "4528fb4fff3a167934e736d5d0c3fad629965cf35ed0d93b0d69b87e8541d677",
+  "bytes": 44755455,
+  "url": "https://github.com/chengxi271-commits/GoTopoGuard/releases/download/v0.2.0/GoTopoGuard-PRICAI2026-evidence-v0.2.0.zip"
+}

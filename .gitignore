@@ -24,3 +24,8 @@ logs/
 *.key
 .vscode/
 .idea/
+
+# Local evidence downloads, generated analyses, and model fits
+data/
+reproduced/
+experiments/results/

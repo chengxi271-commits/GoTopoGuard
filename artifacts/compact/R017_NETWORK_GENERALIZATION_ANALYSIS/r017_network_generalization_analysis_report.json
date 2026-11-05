@@ -1,0 +1,13 @@
+{
+  "run_id": "R017_ANALYSIS",
+  "generated_at_unix": 1780861090,
+  "evidence_class": "R017 network-generalization analysis against b28 1024-visit reference",
+  "status": "done",
+  "record_count": 4288,
+  "expected_record_count": 4288,
+  "network_counts": {
+    "b18": 2144,
+    "b40": 2144
+  },
+  "reference_boundary": "b28 1024 visits is a same-engine/network comparison anchor, not ground truth."
+}

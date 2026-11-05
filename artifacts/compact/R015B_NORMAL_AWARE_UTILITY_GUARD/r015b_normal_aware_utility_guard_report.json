@@ -1,0 +1,119 @@
+{
+  "run_id": "R015B",
+  "generated_at_unix": 1780846871,
+  "evidence_class": "R015B normal-aware utility guard using out-of-group D1/D2/D3/D5 budget labels",
+  "status": "done",
+  "position_count": 7925,
+  "dataset_counts": {
+    "D3": 136,
+    "D5": 1008,
+    "D1": 4781,
+    "D2": 2000
+  },
+  "effect_counts": {
+    "preserved_correct": 5254,
+    "unresolved_error": 1189,
+    "regression": 402,
+    "correction": 1080
+  },
+  "config_count": 9,
+  "configs": [
+    {
+      "name": "NA01_b3_extra_p1p5_cost0",
+      "feature_profile": "B3",
+      "model_kind": "extra",
+      "penalty": 1.5,
+      "visit_penalty": 0.0,
+      "max_trigger_rate": null
+    },
+    {
+      "name": "NA02_b3_extra_p1p5_cost01",
+      "feature_profile": "B3",
+      "model_kind": "extra",
+      "penalty": 1.5,
+      "visit_penalty": 0.01,
+      "max_trigger_rate": null
+    },
+    {
+      "name": "NA03_b3_extra_p1p5_cost02",
+      "feature_profile": "B3",
+      "model_kind": "extra",
+      "penalty": 1.5,
+      "visit_penalty": 0.02,
+      "max_trigger_rate": null
+    },
+    {
+      "name": "NA04_b3_extra_p1p5_cost05",
+      "feature_profile": "B3",
+      "model_kind": "extra",
+      "penalty": 1.5,
+      "visit_penalty": 0.05,
+      "max_trigger_rate": null
+    },
+    {
+      "name": "NA05_b3_extra_p1p5_cost10",
+      "feature_profile": "B3",
+      "model_kind": "extra",
+      "penalty": 1.5,
+      "visit_penalty": 0.1,
+      "max_trigger_rate": null
+    },
+    {
+      "name": "NA06_b3_rf_p1p5_cost02",
+      "feature_profile": "B3",
+      "model_kind": "rf",
+      "penalty": 1.5,
+      "visit_penalty": 0.02,
+      "max_trigger_rate": null
+    },
+    {
+      "name": "NA07_b3_gbdt_p1p5_cost02",
+      "feature_profile": "B3",
+      "model_kind": "gbdt",
+      "penalty": 1.5,
+      "visit_penalty": 0.02,
+      "max_trigger_rate": null
+    },
+    {
+      "name": "NA08_b4_extra_p1p5_cost02",
+      "feature_profile": "B4",
+      "model_kind": "extra",
+      "penalty": 1.5,
+      "visit_penalty": 0.02,
+      "max_trigger_rate": null
+    },
+    {
+      "name": "NA09_b5_extra_p1p5_cost02",
+      "feature_profile": "B5",
+      "model_kind": "extra",
+      "penalty": 1.5,
+      "visit_penalty": 0.02,
+      "max_trigger_rate": null
+    }
+  ],
+  "oracle_boundary": "4096 visits is a same-engine relative oracle only, not ground truth.",
+  "D1+D2_uniform_agreement": 0.7919185960772748,
+  "D1+D2_uniform_mean_visits": 1024.0,
+  "D1+D2_best_method": "NA08_b4_extra_p1p5_cost02",
+  "D1+D2_best_agreement": 0.7845450523521604,
+  "D1+D2_best_mean_visits": 896.9249373248783,
+  "D1+D2_best_trigger_rate": 0.8345376788084353,
+  "D1+D2_agreement_delta_vs_uniform": -0.00737354372511434,
+  "D1+D2_mean_visit_delta_vs_uniform": -127.07506267512167,
+  "D3+D5_uniform_agreement": 0.8426573426573427,
+  "D3+D5_uniform_mean_visits": 1024.0,
+  "D3+D5_best_method": "NA07_b3_gbdt_p1p5_cost02",
+  "D3+D5_best_agreement": 0.8435314685314685,
+  "D3+D5_best_mean_visits": 854.1538461538462,
+  "D3+D5_best_trigger_rate": 0.7788461538461539,
+  "D3+D5_agreement_delta_vs_uniform": 0.0008741258741258306,
+  "D3+D5_mean_visit_delta_vs_uniform": -169.8461538461538,
+  "ALL_uniform_agreement": 0.7992429022082019,
+  "ALL_uniform_mean_visits": 1024.0,
+  "ALL_best_method": "NA08_b4_extra_p1p5_cost02",
+  "ALL_best_agreement": 0.7920504731861199,
+  "ALL_best_mean_visits": 889.8786119873818,
+  "ALL_best_trigger_rate": 0.8253627760252366,
+  "ALL_agreement_delta_vs_uniform": -0.007192429022082059,
+  "ALL_mean_visit_delta_vs_uniform": -134.12138801261824
+}

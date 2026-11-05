@@ -1,0 +1,262 @@
+{
+  "status": "done",
+  "strict_control_summary": {
+    "strict_controls": {
+      "folds": 13,
+      "mean_auroc": 0.9586883610648016,
+      "mean_auprc": 0.9257699812101635,
+      "feature_count": 29,
+      "delta_auroc_vs_strict_controls": 0.0,
+      "delta_auprc_vs_strict_controls": 0.0
+    },
+    "strict_controls_plus_topology": {
+      "folds": 13,
+      "mean_auroc": 0.9571664137539824,
+      "mean_auprc": 0.914952210914422,
+      "feature_count": 39,
+      "delta_auroc_vs_strict_controls": -0.0015219473108192272,
+      "delta_auprc_vs_strict_controls": -0.010817770295741491
+    },
+    "strict_controls_plus_topology_plus_symmetry": {
+      "folds": 13,
+      "mean_auroc": 0.9554696338655104,
+      "mean_auprc": 0.9135748221073521,
+      "feature_count": 51,
+      "delta_auroc_vs_strict_controls": -0.0032187271992911715,
+      "delta_auprc_vs_strict_controls": -0.012195159102811437
+    }
+  },
+  "matched_control_summary": {
+    "strict_controls": {
+      "folds": 13,
+      "mean_auroc": 0.9455788820487148,
+      "mean_auprc": 0.9500711787290559,
+      "mean_matched_pairs": 609.6153846153846,
+      "delta_auroc_vs_strict_controls": 0.0,
+      "delta_auprc_vs_strict_controls": 0.0
+    },
+    "strict_controls_plus_topology": {
+      "folds": 13,
+      "mean_auroc": 0.9237665007571667,
+      "mean_auprc": 0.9325628136609551,
+      "mean_matched_pairs": 609.6153846153846,
+      "delta_auroc_vs_strict_controls": -0.021812381291548055,
+      "delta_auprc_vs_strict_controls": -0.01750836506810083
+    }
+  },
+  "mechanism_holdout_summary": {
+    "holdout_d5_generator": {
+      "board_proxy": {
+        "task": "holdout_d5_generator",
+        "purpose": "D5 generated topology mechanism held out from positive training.",
+        "model": "board_proxy",
+        "feature_count": 6,
+        "train_count": 10670,
+        "test_count": 4474,
+        "test_positive_count": 1008,
+        "auroc": 0.023877359657076914,
+        "auprc": 0.13994975305100887,
+        "status": "done"
+      },
+      "b3_board_plus_topology": {
+        "task": "holdout_d5_generator",
+        "purpose": "D5 generated topology mechanism held out from positive training.",
+        "model": "b3_board_plus_topology",
+        "feature_count": 18,
+        "train_count": 10670,
+        "test_count": 4474,
+        "test_positive_count": 1008,
+        "auroc": 0.047184554722061935,
+        "auprc": 0.13599471679896769,
+        "status": "done"
+      },
+      "b5_full": {
+        "task": "holdout_d5_generator",
+        "purpose": "D5 generated topology mechanism held out from positive training.",
+        "model": "b5_full",
+        "feature_count": 42,
+        "train_count": 10342,
+        "test_count": 4364,
+        "test_positive_count": 1008,
+        "auroc": 0.12095547893372685,
+        "auprc": 0.1361081896463687,
+        "status": "done"
+      },
+      "strict_plus_topology": {
+        "task": "holdout_d5_generator",
+        "purpose": "D5 generated topology mechanism held out from positive training.",
+        "model": "strict_plus_topology",
+        "feature_count": 39,
+        "train_count": 10342,
+        "test_count": 4364,
+        "test_positive_count": 1008,
+        "auroc": 0.1973946213368144,
+        "auprc": 0.1500875751287875,
+        "status": "done"
+      }
+    },
+    "holdout_d3_public_attack": {
+      "board_proxy": {
+        "task": "holdout_d3_public_attack",
+        "purpose": "Public adversarial replay split held out from positive training.",
+        "model": "board_proxy",
+        "feature_count": 6,
+        "train_count": 11542,
+        "test_count": 3602,
+        "test_positive_count": 136,
+        "auroc": 0.9305946844981501,
+        "auprc": 0.30868582277965123,
+        "status": "done"
+      },
+      "b3_board_plus_topology": {
+        "task": "holdout_d3_public_attack",
+        "purpose": "Public adversarial replay split held out from positive training.",
+        "model": "b3_board_plus_topology",
+        "feature_count": 18,
+        "train_count": 11542,
+        "test_count": 3602,
+        "test_positive_count": 136,
+        "auroc": 0.9578393893622077,
+        "auprc": 0.6102857775721225,
+        "status": "done"
+      },
+      "b5_full": {
+        "task": "holdout_d3_public_attack",
+        "purpose": "Public adversarial replay split held out from positive training.",
+        "model": "b5_full",
+        "feature_count": 42,
+        "train_count": 11214,
+        "test_count": 3492,
+        "test_positive_count": 136,
+        "auroc": 0.8231832363457898,
+        "auprc": 0.4474419003419474,
+        "status": "done"
+      },
+      "strict_plus_topology": {
+        "task": "holdout_d3_public_attack",
+        "purpose": "Public adversarial replay split held out from positive training.",
+        "model": "strict_plus_topology",
+        "feature_count": 39,
+        "train_count": 11214,
+        "test_count": 3492,
+        "test_positive_count": 136,
+        "auroc": 0.893844650494286,
+        "auprc": 0.46357830908995673,
+        "status": "done"
+      }
+    }
+  },
+  "guard_significance": {
+    "best_method": "S09_b3_extra_p1p5",
+    "paired_count": 1144,
+    "uniform_correct": 964,
+    "method_correct": 969,
+    "agreement_delta": 0.004370629370629371,
+    "mcnemar_method_only_correct": 20,
+    "mcnemar_uniform_only_correct": 15,
+    "mcnemar_exact_p": 0.49955983320251107,
+    "rounds": 5000,
+    "ci95_low": -0.005244755244755245,
+    "ci95_high": 0.01486013986013986
+  },
+  "score_sensitivity_summary": {
+    "budget_score_abs_delta_1024_8192": {
+      "ALL": {
+        "n": 2144,
+        "mean": 0.3357146146992771,
+        "median": 0.16246523499999999,
+        "p90": 0.6628788100000005
+      },
+      "D3": {
+        "n": 136,
+        "mean": 0.24286083161764752,
+        "median": 0.08625244999999637,
+        "p90": 0.2808819999999912
+      },
+      "D4": {
+        "n": 1000,
+        "mean": 0.5171349555712701,
+        "median": 0.24652508000000006,
+        "p90": 1.1039306
+      },
+      "D5": {
+        "n": 1008,
+        "mean": 0.16826200917061507,
+        "median": 0.12770711500000043,
+        "p90": 0.3252324999999985
+      }
+    },
+    "budget_winrate_abs_delta_1024_8192": {
+      "ALL": {
+        "n": 2144,
+        "mean": 0.005589504771803676,
+        "median": 0.00016313241200001215,
+        "p90": 0.013043243400000001
+      },
+      "D3": {
+        "n": 136,
+        "mean": 6.157178691398379e-05,
+        "median": 3.000000026176508e-09,
+        "p90": 2.3966145899999996e-07
+      },
+      "D4": {
+        "n": 1000,
+        "mean": 0.010433889839409499,
+        "median": 0.000948723500000026,
+        "p90": 0.035218769999999955
+      },
+      "D5": {
+        "n": 1008,
+        "mean": 0.0015293994328544449,
+        "median": 1.9350503999966933e-05,
+        "p90": 0.005468610999999957
+      }
+    },
+    "network_score_abs_delta_vs_b28_1024": {
+      "ALL": {
+        "n": 4288,
+        "mean": 0.9540492680716789,
+        "median": 0.43749570000000126,
+        "p90": 1.922792599999994
+      },
+      "b18": {
+        "n": 2144,
+        "mean": 0.820012382114624,
+        "median": 0.4275608999999996,
+        "p90": 2.273913300000004
+      },
+      "b40": {
+        "n": 2144,
+        "mean": 1.0880861540287337,
+        "median": 0.44636800000000143,
+        "p90": 1.613620300000001
+      }
+    },
+    "network_winrate_abs_delta_vs_b28_1024": {
+      "ALL": {
+        "n": 4288,
+        "mean": 0.018591175442469014,
+        "median": 0.001896801000000059,
+        "p90": 0.06028476000000005
+      },
+      "b18": {
+        "n": 2144,
+        "mean": 0.015487699429731902,
+        "median": 0.0009710327350000172,
+        "p90": 0.05480416499999996
+      },
+      "b40": {
+        "n": 2144,
+        "mean": 0.02169465145520613,
+        "median": 0.002732881919999984,
+        "p90": 0.06611491300000001
+      }
+    }
+  },
+  "feature_counts": {
+    "b3_board_plus_topology": 18,
+    "b5_full": 42,
+    "strict_controls": 29,
+    "strict_controls_plus_topology": 39
+  }
+}

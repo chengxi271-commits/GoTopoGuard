@@ -1,0 +1,11 @@
+{
+  "run_id": "R015_MERGE_BUDGET_SHARDS",
+  "generated_at_unix": 1780842576,
+  "evidence_class": "R015 merged normal-budget query shards",
+  "status": "done",
+  "shard_root": "experiments/results/R015_NORMAL_BUDGET_QUERIES_SHARDS",
+  "completed_query_count": 13562,
+  "position_feature_count": 6781,
+  "expected_query_count": 13562,
+  "expected_position_count": 6781
+}

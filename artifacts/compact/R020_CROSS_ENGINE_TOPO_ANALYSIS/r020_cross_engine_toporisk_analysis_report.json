@@ -1,0 +1,40 @@
+{
+  "status": "done",
+  "generated_at_unix": 1780985024,
+  "engine_roots": [
+    {
+      "root": "[local-path]/R020_LEELA_FULL_CPU16_V512",
+      "records_path": "[local-path]/cross_engine_records.jsonl",
+      "report_path": "[local-path]/r020_cross_engine_transfer_report.json",
+      "exists": true,
+      "report_status": "done",
+      "record_count": 2144,
+      "num_selected": 2144
+    },
+    {
+      "root": "[local-path]/R020_ELF_FULL_GPU0_R1600_WAIT_R019",
+      "records_path": "[local-path]/cross_engine_records.jsonl",
+      "report_path": "[local-path]/r020_cross_engine_transfer_report.json",
+      "exists": true,
+      "report_status": "done",
+      "record_count": 2144,
+      "num_selected": 2144
+    }
+  ],
+  "joined_count": 4288,
+  "missing_score_count": 0,
+  "summary_rows": 70,
+  "pair_rows": 1,
+  "scorer_metadata": {
+    "toporisk_training_count": 15144,
+    "toporisk_natural_threshold_count": 7000,
+    "toporisk_fpr_cap": 0.05,
+    "toporisk_threshold": 0.5422997963626892,
+    "utility_training_count": 1144,
+    "utility_threshold": -0.28703739901123376,
+    "utility_penalty": 1.5,
+    "utility_train_oracle_agreement_rate": 0.8513986013986014,
+    "utility_train_trigger_rate": 0.7937062937062938
+  },
+  "boundary": "R020 post-analysis: trigger/disagreement association, not engine correctness or Go ground truth."
+}

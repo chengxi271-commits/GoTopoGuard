@@ -1,0 +1,9 @@
+{
+  "run_id": "R006",
+  "split_id": "D1_NATURAL_HUMAN_JGDB",
+  "source_id": "jgdb",
+  "source_url": "https://data.pjreddie.com/files/jgdb.tar.gz",
+  "target_count": 5000,
+  "position_count": 5000,
+  "evidence_class": "split construction only"
+}

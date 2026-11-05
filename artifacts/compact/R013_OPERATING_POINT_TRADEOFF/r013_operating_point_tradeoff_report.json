@@ -1,0 +1,79 @@
+{
+  "run_id": "R013_OPERATING_POINT_TRADEOFF",
+  "generated_at_unix": 1780807238,
+  "evidence_class": "R013 operating-point tradeoff under natural-FPR-capped thresholds",
+  "status": "done",
+  "detectors": [
+    "B3_topology_gbdt",
+    "B5_topology_plus_search_plus_metamorphic_gbdt"
+  ],
+  "fpr_caps": [
+    0.01,
+    0.05,
+    0.1
+  ],
+  "fold_count": 5,
+  "heldout_game_count": 20,
+  "record_count": 600,
+  "summary": {
+    "B3_topology_gbdt": {
+      "0.01": {
+        "evaluation_count": 100,
+        "warning_detected_count": 99,
+        "warning_detected_rate": 0.99,
+        "mean_earliest_warning_lead_moves": 55.282828282828284,
+        "median_earliest_warning_lead_moves": 80.0,
+        "mean_test_natural_trigger_rate": 0.012472672447352465,
+        "median_test_natural_trigger_rate": 0.011169024571854059
+      },
+      "0.05": {
+        "evaluation_count": 100,
+        "warning_detected_count": 100,
+        "warning_detected_rate": 1.0,
+        "mean_earliest_warning_lead_moves": 73.2,
+        "median_earliest_warning_lead_moves": 80.0,
+        "mean_test_natural_trigger_rate": 0.0668485303280105,
+        "median_test_natural_trigger_rate": 0.06609195402298851
+      },
+      "0.1": {
+        "evaluation_count": 100,
+        "warning_detected_count": 100,
+        "warning_detected_rate": 1.0,
+        "mean_earliest_warning_lead_moves": 77.2,
+        "median_earliest_warning_lead_moves": 80.0,
+        "mean_test_natural_trigger_rate": 0.12179518317059829,
+        "median_test_natural_trigger_rate": 0.11764705882352941
+      }
+    },
+    "B5_topology_plus_search_plus_metamorphic_gbdt": {
+      "0.01": {
+        "evaluation_count": 100,
+        "warning_detected_count": 100,
+        "warning_detected_rate": 1.0,
+        "mean_earliest_warning_lead_moves": 62.2,
+        "median_earliest_warning_lead_moves": 80.0,
+        "mean_test_natural_trigger_rate": 0.015338823288547623,
+        "median_test_natural_trigger_rate": 0.0144402777046129
+      },
+      "0.05": {
+        "evaluation_count": 100,
+        "warning_detected_count": 100,
+        "warning_detected_rate": 1.0,
+        "mean_earliest_warning_lead_moves": 76.8,
+        "median_earliest_warning_lead_moves": 80.0,
+        "mean_test_natural_trigger_rate": 0.07278745413432948,
+        "median_test_natural_trigger_rate": 0.07164634146341463
+      },
+      "0.1": {
+        "evaluation_count": 100,
+        "warning_detected_count": 100,
+        "warning_detected_rate": 1.0,
+        "mean_earliest_warning_lead_moves": 79.2,
+        "median_earliest_warning_lead_moves": 80.0,
+        "mean_test_natural_trigger_rate": 0.13779602950920058,
+        "median_test_natural_trigger_rate": 0.1342096692480278
+      }
+    }
+  },
+  "input_feature_rows": "experiments/results/R011_DETECTION_BASELINE_SWEEP/feature_rows.jsonl"
+}

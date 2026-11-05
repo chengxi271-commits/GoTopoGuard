@@ -1,0 +1,98 @@
+{
+  "run_id": "R013",
+  "generated_at_unix": 1780805802,
+  "evidence_class": "R013 held-out natural false-positive audit",
+  "status": "done",
+  "detector_selection": "auto_mean_auroc_then_auprc_then_fpr90",
+  "detector_baseline": "B3_topology_gbdt",
+  "detector_summaries": {
+    "B0_prior": {
+      "metric_count": 13,
+      "mean_auroc": 0.5,
+      "mean_auprc": 0.12429748463320053,
+      "mean_fpr_at_recall_90": 1.0
+    },
+    "B1_board_proxy_logreg": {
+      "metric_count": 13,
+      "mean_auroc": 0.9308043270537686,
+      "mean_auprc": 0.7529532967386605,
+      "mean_fpr_at_recall_90": 0.14897760467380722
+    },
+    "B3_topology_logreg": {
+      "metric_count": 13,
+      "mean_auroc": 0.9174478251540799,
+      "mean_auprc": 0.7353264660248833,
+      "mean_fpr_at_recall_90": 0.14376539320694198
+    },
+    "B3_topology_gbdt": {
+      "metric_count": 13,
+      "mean_auroc": 0.9576506222742261,
+      "mean_auprc": 0.9044368385461425,
+      "mean_fpr_at_recall_90": 0.08339538346984364
+    },
+    "B1_engine_confidence_logreg": {
+      "metric_count": 13,
+      "mean_auroc": 0.708527663994714,
+      "mean_auprc": 0.519049333622218,
+      "mean_fpr_at_recall_90": 0.5538813320825515
+    },
+    "B2_search_brittleness_logreg": {
+      "metric_count": 13,
+      "mean_auroc": 0.6950165507557545,
+      "mean_auprc": 0.1642341196215977,
+      "mean_fpr_at_recall_90": 0.4508090994371482
+    },
+    "B4_topology_plus_search_logreg": {
+      "metric_count": 13,
+      "mean_auroc": 0.8465188572712656,
+      "mean_auprc": 0.7830331436706646,
+      "mean_fpr_at_recall_90": 0.24906191369606004
+    },
+    "B4_topology_plus_search_gbdt": {
+      "metric_count": 13,
+      "mean_auroc": 0.9488539667599742,
+      "mean_auprc": 0.8984939918276295,
+      "mean_fpr_at_recall_90": 0.12670028142589118
+    },
+    "B5_topology_plus_search_plus_metamorphic_logreg": {
+      "metric_count": 13,
+      "mean_auroc": 0.8485855526487546,
+      "mean_auprc": 0.7646041383839655,
+      "mean_fpr_at_recall_90": 0.24753752345215757
+    },
+    "B5_topology_plus_search_plus_metamorphic_gbdt": {
+      "metric_count": 13,
+      "mean_auroc": 0.9553807335936078,
+      "mean_auprc": 0.9249993192010196,
+      "mean_fpr_at_recall_90": 0.08489681050656661
+    }
+  },
+  "feature_count": 18,
+  "fold_count": 5,
+  "target_recalls": [
+    0.8,
+    0.9
+  ],
+  "summary_by_target_recall": {
+    "0.8": {
+      "group_count": 30,
+      "position_count": 7000,
+      "trigger_count": 2698,
+      "micro_trigger_rate": 0.38542857142857145,
+      "mean_group_trigger_rate": 0.4015423252196549,
+      "median_group_trigger_rate": 0.3253682118008494,
+      "max_group_trigger_rate": 0.7910447761194029
+    },
+    "0.9": {
+      "group_count": 30,
+      "position_count": 7000,
+      "trigger_count": 3755,
+      "micro_trigger_rate": 0.5364285714285715,
+      "mean_group_trigger_rate": 0.552365232829485,
+      "median_group_trigger_rate": 0.5945378151260504,
+      "max_group_trigger_rate": 0.9104477611940298
+    }
+  },
+  "input_feature_rows": "experiments/results/R011_DETECTION_BASELINE_SWEEP/feature_rows.jsonl",
+  "input_metrics": "experiments/results/R011_DETECTION_BASELINE_SWEEP/family_heldout_metrics.jsonl"
+}

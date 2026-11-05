@@ -1,0 +1,137 @@
+{
+  "run_id": "R011_SEARCH_FEATURES",
+  "generated_at_unix": 1780761519,
+  "evidence_class": "KataGo search feature extraction",
+  "status": "done",
+  "query_compatible_position_count": 14706,
+  "skipped_position_count": 438,
+  "expected_query_count": 29412,
+  "completed_query_count": 29412,
+  "newly_completed_query_count": 29412,
+  "visits": [
+    64,
+    256
+  ],
+  "skipped_sample": [
+    {
+      "position_id": "R006_jgdb_00015",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00016",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00148",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00149",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00150",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00221",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R006_jgdb_00222",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R006_jgdb_00223",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R006_jgdb_00270",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.25"
+    },
+    {
+      "position_id": "R006_jgdb_00271",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.25"
+    },
+    {
+      "position_id": "R006_jgdb_00272",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.25"
+    },
+    {
+      "position_id": "R006_jgdb_00368",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00369",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00370",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00389",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00390",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00391",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "3.75"
+    },
+    {
+      "position_id": "R006_jgdb_00434",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R006_jgdb_00435",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    },
+    {
+      "position_id": "R006_jgdb_00436",
+      "dataset": "D1",
+      "reason": "katago_incompatible_komi",
+      "komi": "2.75"
+    }
+  ]
+}

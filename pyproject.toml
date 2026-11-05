@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gotopoguard"
-version = "0.1.0"
-description = "Reference board-topology features accompanying GoTopoGuard (PRICAI 2026)"
+version = "0.2.0"
+description = "GoTopoGuard topology monitoring and PRICAI 2026 analysis artifacts"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "Apache-2.0"
@@ -22,3 +22,6 @@ Issues = "https://github.com/chengxi271-commits/GoTopoGuard/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[project.optional-dependencies]
+reproduce = ["numpy==2.2.6", "scipy==1.15.3", "scikit-learn==1.7.2", "joblib==1.5.2", "threadpoolctl==3.6.0"]

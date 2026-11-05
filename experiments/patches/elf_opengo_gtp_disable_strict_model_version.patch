@@ -1,0 +1,16 @@
+diff --git a/src_cpp/elfgames/go/common/game_selfplay.cc b/src_cpp/elfgames/go/common/game_selfplay.cc
+index 6f21e3d..a5f7e2c 100644
+--- a/src_cpp/elfgames/go/common/game_selfplay.cc
++++ b/src_cpp/elfgames/go/common/game_selfplay.cc
+@@ -185,7 +185,10 @@ void GoGameSelfPlay::restart() {
+         -1.0,
+         -1,
+         -1,
+-        request.vers.black_ver));
++        // Online GTP uses a single fixed loaded network. The Python-side
++        // evaluator reports the local model-interface step as rv, which can
++        // differ from the C++ context version and otherwise aborts GTP play.
++        -1));
+     _human_player.reset(new AI(client_, {"human_actor"}));
+   } else {
+     logger_->critical("Unknown mode! {}", _options.mode);

@@ -1,0 +1,142 @@
+{
+  "run_id": "R016_MERGE",
+  "generated_at_unix": 1780858665,
+  "evidence_class": "R016 merged budget-generalization query shards",
+  "status": "done",
+  "shard_count": 4,
+  "completed_query_count": 4288,
+  "position_feature_count": 2144,
+  "expected_query_count": 4288,
+  "expected_position_count": 2144,
+  "shard_reports": [
+    {
+      "run_id": "R016_SHARD_00",
+      "generated_at_unix": 1780857805,
+      "evidence_class": "R016 budget-generalization KataGo query extraction",
+      "status": "done",
+      "selected_position_count": 2144,
+      "shard_position_count": 545,
+      "dataset_counts": {
+        "D3": 136,
+        "D4": 1000,
+        "D5": 1008
+      },
+      "shard_dataset_counts": {
+        "D3": 38,
+        "D4": 254,
+        "D5": 253
+      },
+      "d4_limit": 1000,
+      "d5_limit": 0,
+      "visits": [
+        1024,
+        8192
+      ],
+      "shard_index": 0,
+      "shard_count": 4,
+      "expected_query_count": 1090,
+      "completed_query_count": 1090,
+      "newly_completed_query_count": 1090,
+      "position_feature_count": 545,
+      "skipped_position_count": 219,
+      "oracle_boundary": "8192 visits is a stronger same-engine relative oracle only, not ground truth."
+    },
+    {
+      "run_id": "R016_SHARD_01",
+      "generated_at_unix": 1780856846,
+      "evidence_class": "R016 budget-generalization KataGo query extraction",
+      "status": "done",
+      "selected_position_count": 2144,
+      "shard_position_count": 489,
+      "dataset_counts": {
+        "D3": 136,
+        "D4": 1000,
+        "D5": 1008
+      },
+      "shard_dataset_counts": {
+        "D3": 31,
+        "D4": 227,
+        "D5": 231
+      },
+      "d4_limit": 1000,
+      "d5_limit": 0,
+      "visits": [
+        1024,
+        8192
+      ],
+      "shard_index": 1,
+      "shard_count": 4,
+      "expected_query_count": 978,
+      "completed_query_count": 978,
+      "newly_completed_query_count": 978,
+      "position_feature_count": 489,
+      "skipped_position_count": 219,
+      "oracle_boundary": "8192 visits is a stronger same-engine relative oracle only, not ground truth."
+    },
+    {
+      "run_id": "R016_SHARD_02",
+      "generated_at_unix": 1780857823,
+      "evidence_class": "R016 budget-generalization KataGo query extraction",
+      "status": "done",
+      "selected_position_count": 2144,
+      "shard_position_count": 552,
+      "dataset_counts": {
+        "D3": 136,
+        "D4": 1000,
+        "D5": 1008
+      },
+      "shard_dataset_counts": {
+        "D3": 36,
+        "D4": 248,
+        "D5": 268
+      },
+      "d4_limit": 1000,
+      "d5_limit": 0,
+      "visits": [
+        1024,
+        8192
+      ],
+      "shard_index": 2,
+      "shard_count": 4,
+      "expected_query_count": 1104,
+      "completed_query_count": 1104,
+      "newly_completed_query_count": 1104,
+      "position_feature_count": 552,
+      "skipped_position_count": 219,
+      "oracle_boundary": "8192 visits is a stronger same-engine relative oracle only, not ground truth."
+    },
+    {
+      "run_id": "R016_SHARD_03",
+      "generated_at_unix": 1780857878,
+      "evidence_class": "R016 budget-generalization KataGo query extraction",
+      "status": "done",
+      "selected_position_count": 2144,
+      "shard_position_count": 558,
+      "dataset_counts": {
+        "D3": 136,
+        "D4": 1000,
+        "D5": 1008
+      },
+      "shard_dataset_counts": {
+        "D3": 31,
+        "D4": 271,
+        "D5": 256
+      },
+      "d4_limit": 1000,
+      "d5_limit": 0,
+      "visits": [
+        1024,
+        8192
+      ],
+      "shard_index": 3,
+      "shard_count": 4,
+      "expected_query_count": 1116,
+      "completed_query_count": 1116,
+      "newly_completed_query_count": 1116,
+      "position_feature_count": 558,
+      "skipped_position_count": 219,
+      "oracle_boundary": "8192 visits is a stronger same-engine relative oracle only, not ground truth."
+    }
+  ],
+  "oracle_boundary": "8192 visits is a stronger same-engine relative oracle only, not ground truth."
+}

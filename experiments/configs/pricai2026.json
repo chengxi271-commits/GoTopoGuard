@@ -1,0 +1,386 @@
+{
+  "scope": "Recorded PRICAI settings; runtime paths supplied by the user",
+  "splits": {
+    "D1": {
+      "run_id": "R006",
+      "generated_at_unix": 1780754258,
+      "evidence_class": "split construction only",
+      "status": "done",
+      "split_id": "D1_NATURAL_HUMAN_JGDB",
+      "source_id": "jgdb",
+      "source_url": "https://data.pjreddie.com/files/jgdb.tar.gz",
+      "target_count": 5000,
+      "position_count": 5000,
+      "window_target_counts": {
+        "early_40_80": 1667,
+        "mid_80_140": 1667,
+        "late_140_220": 1666
+      },
+      "window_counts": {
+        "early_40_80": 1667,
+        "mid_80_140": 1667,
+        "late_140_220": 1666
+      },
+      "scanned_sgf_count": 2543,
+      "source_status_counts": {
+        "accepted_games_with_positions": 2542,
+        "duplicate_prefix_signature_skipped": 8,
+        "parse_or_prefix_error": 1
+      },
+      "unique_signature_count": 5000,
+      "katago_query_compatible_count": 4781
+    },
+    "D2": {
+      "run_id": "R007",
+      "generated_at_unix": 1780754643,
+      "evidence_class": "split construction only",
+      "status": "done",
+      "split_id": "D2_NATURAL_ENGINE_KATAGO",
+      "source_id": "katago_kata1_multi",
+      "source_url": null,
+      "source_urls": [
+        "https://katagoarchive.org/kata1/traininggames/2020-12-12sgfs.tar.bz2",
+        "https://katagoarchive.org/kata1/traininggames/2021-01-15sgfs.tar.bz2",
+        "https://katagoarchive.org/kata1/traininggames/2021-03-15sgfs.tar.bz2",
+        "https://katagoarchive.org/kata1/traininggames/2021-05-30sgfs.tar.bz2",
+        "https://katagoarchive.org/kata1/traininggames/2021-07-10sgfs.tar.bz2",
+        "https://katagoarchive.org/kata1/traininggames/2021-09-12sgfs.tar.bz2",
+        "https://katagoarchive.org/kata1/traininggames/2021-10-30sgfs.tar.bz2"
+      ],
+      "target_count": 2000,
+      "position_count": 2000,
+      "window_target_counts": {
+        "early_40_80": 667,
+        "mid_80_140": 667,
+        "late_140_220": 666
+      },
+      "window_counts": {
+        "early_40_80": 667,
+        "mid_80_140": 667,
+        "late_140_220": 666
+      },
+      "scanned_sgf_count": 1272,
+      "source_status_counts": {
+        "rejected_board_size": 553,
+        "accepted_games_with_positions": 698,
+        "invalid_replay": 3,
+        "parse_or_prefix_error": 18,
+        "duplicate_prefix_signature_skipped": 8
+      },
+      "per_source_scanned_sgf_count": {
+        "katago_kata1_2020_12_12": 370,
+        "katago_kata1_2021_01_15": 902
+      },
+      "unique_signature_count": 2000,
+      "katago_query_compatible_count": 2000
+    },
+    "D3": {
+      "run_id": "R008",
+      "generated_at_unix": 1780754858,
+      "evidence_class": "adversarial replay split construction only",
+      "status": "done",
+      "split_id": "D3_ADVERSARIAL_GO_ATTACK",
+      "source_id": "go_attack_site_examples",
+      "source_url": "https://goattack.far.ai",
+      "target_game_count": 20,
+      "fetched_game_count": 20,
+      "position_count": 136,
+      "unique_signature_count": 136,
+      "valid_game_count": 20,
+      "status_counts": {
+        "valid": 20
+      },
+      "requested_lead_moves": [
+        80,
+        40,
+        20,
+        10,
+        5,
+        1,
+        0
+      ],
+      "requested_available_prefix_count": 140,
+      "unavailable_prefix_count": 0,
+      "duplicate_signature_skipped": 4,
+      "lead_counts": {
+        "80": 20,
+        "40": 20,
+        "20": 20,
+        "10": 20,
+        "5": 20,
+        "1": 20,
+        "0": 16
+      },
+      "failure_window_bucket_counts": {
+        "early_41_80": 20,
+        "early_21_40": 20,
+        "mid_6_20": 40,
+        "near_1_5": 40,
+        "terminal": 16
+      }
+    },
+    "D4": {
+      "run_id": "R009",
+      "generated_at_unix": 1780756668,
+      "evidence_class": "perturbation split construction only",
+      "status": "done",
+      "split_id": "D4_MEANINGLESS_STONE_PERTURBATION",
+      "input_paths": [
+        "experiments\\results\\R006_NATURAL_HUMAN_SPLIT\\positions.jsonl",
+        "experiments\\results\\R007_NATURAL_ENGINE_SPLIT\\positions.jsonl"
+      ],
+      "input_position_count": 7000,
+      "pair_count": 7000,
+      "status_counts": {
+        "valid_pair": 7000
+      },
+      "source_split_counts": {
+        "D1_NATURAL_HUMAN_JGDB": 5000,
+        "D2_NATURAL_ENGINE_KATAGO": 2000
+      },
+      "perturbation_color_counts": {
+        "B": 3578,
+        "W": 3422
+      },
+      "low_impact_proxy_counts": {
+        "isolated_no_capture": 7000
+      },
+      "duplicate_perturbed_signature_count": 0
+    },
+    "D5": {
+      "run_id": "R010",
+      "generated_at_unix": 1780756423,
+      "evidence_class": "controlled topology stress construction only",
+      "split_id": "D5_TOPOLOGY_STRESS_TEMPLATES",
+      "families": [
+        "cyclic_enclosure",
+        "cut_connect_corridor",
+        "ladder_net_escape",
+        "boundary_escape_route",
+        "false_eye_enclosure",
+        "shared_liberty_race",
+        "pass_scoring_instability"
+      ],
+      "status": "done",
+      "per_family_target": 144,
+      "position_count": 1008,
+      "family_counts": {
+        "cyclic_enclosure": 144,
+        "cut_connect_corridor": 144,
+        "ladder_net_escape": 144,
+        "boundary_escape_route": 144,
+        "false_eye_enclosure": 144,
+        "shared_liberty_race": 144,
+        "pass_scoring_instability": 144
+      },
+      "invalid_face_validity_counts": {
+        "boundary_escape_route": 403
+      },
+      "duplicate_signature_skipped": 365,
+      "unique_signature_count": 1008
+    }
+  },
+  "detector_feature_groups": {
+    "board_proxy": [
+      "black_count",
+      "white_count",
+      "empty_count",
+      "stone_count",
+      "stone_balance",
+      "edge_stone_count"
+    ],
+    "topology": [
+      "black_group_count",
+      "white_group_count",
+      "black_max_group_size",
+      "white_max_group_size",
+      "black_max_liberty_count",
+      "white_max_liberty_count",
+      "empty_region_count",
+      "enclosed_empty_region_count",
+      "black_bounded_empty_region_count",
+      "white_bounded_empty_region_count",
+      "black_articulation_count",
+      "white_articulation_count"
+    ],
+    "engine_confidence": [
+      "v256_winrate",
+      "v256_scoreLead",
+      "v256_scoreStdev",
+      "v256_top_visit_gap",
+      "v256_top_prior",
+      "v256_move_info_count",
+      "v256_visit_entropy",
+      "v256_prior_entropy",
+      "v256_policy_entropy"
+    ],
+    "search_brittleness": [
+      "budget_top_move_disagreement_64_256",
+      "budget_winrate_abs_delta_64_256",
+      "budget_score_abs_delta_64_256"
+    ],
+    "metamorphic_symmetry": [
+      "sym_v64_top_move_disagreement_rate",
+      "sym_v64_top_move_unique_count",
+      "sym_v64_winrate_abs_delta_mean",
+      "sym_v64_winrate_abs_delta_max",
+      "sym_v64_score_abs_delta_mean",
+      "sym_v64_score_abs_delta_max",
+      "sym_v256_top_move_disagreement_rate",
+      "sym_v256_top_move_unique_count",
+      "sym_v256_winrate_abs_delta_mean",
+      "sym_v256_winrate_abs_delta_max",
+      "sym_v256_score_abs_delta_mean",
+      "sym_v256_score_abs_delta_max"
+    ]
+  },
+  "guard_sweep": [
+    {
+      "feature_profile": "B3",
+      "model_kind": "gbdt",
+      "penalty": 1.0,
+      "max_trigger_rate": null,
+      "name": "S01_b3_gbdt_p1"
+    },
+    {
+      "feature_profile": "B3",
+      "model_kind": "gbdt",
+      "penalty": 0.5,
+      "max_trigger_rate": null,
+      "name": "S02_b3_gbdt_p0p5"
+    },
+    {
+      "feature_profile": "B3",
+      "model_kind": "gbdt",
+      "penalty": 1.5,
+      "max_trigger_rate": null,
+      "name": "S03_b3_gbdt_p1p5"
+    },
+    {
+      "feature_profile": "B3",
+      "model_kind": "gbdt",
+      "penalty": 2.0,
+      "max_trigger_rate": null,
+      "name": "S04_b3_gbdt_p2"
+    },
+    {
+      "feature_profile": "B3",
+      "model_kind": "logreg",
+      "penalty": 1.0,
+      "max_trigger_rate": null,
+      "name": "S05_b3_logreg_p1"
+    },
+    {
+      "feature_profile": "B3",
+      "model_kind": "rf",
+      "penalty": 1.0,
+      "max_trigger_rate": null,
+      "name": "S06_b3_rf_p1"
+    },
+    {
+      "feature_profile": "B3",
+      "model_kind": "rf",
+      "penalty": 1.5,
+      "max_trigger_rate": null,
+      "name": "S07_b3_rf_p1p5"
+    },
+    {
+      "feature_profile": "B3",
+      "model_kind": "extra",
+      "penalty": 1.0,
+      "max_trigger_rate": null,
+      "name": "S08_b3_extra_p1"
+    },
+    {
+      "feature_profile": "B3",
+      "model_kind": "extra",
+      "penalty": 1.5,
+      "max_trigger_rate": null,
+      "name": "S09_b3_extra_p1p5"
+    },
+    {
+      "feature_profile": "B4",
+      "model_kind": "gbdt",
+      "penalty": 1.0,
+      "max_trigger_rate": null,
+      "name": "S10_b4_gbdt_p1"
+    },
+    {
+      "feature_profile": "B4",
+      "model_kind": "gbdt",
+      "penalty": 1.5,
+      "max_trigger_rate": null,
+      "name": "S11_b4_gbdt_p1p5"
+    },
+    {
+      "feature_profile": "B5",
+      "model_kind": "gbdt",
+      "penalty": 1.0,
+      "max_trigger_rate": null,
+      "name": "S12_b5_gbdt_p1"
+    },
+    {
+      "feature_profile": "B5",
+      "model_kind": "gbdt",
+      "penalty": 2.0,
+      "max_trigger_rate": null,
+      "name": "S13_b5_gbdt_p2"
+    },
+    {
+      "feature_profile": "B5",
+      "model_kind": "extra",
+      "penalty": 1.0,
+      "max_trigger_rate": null,
+      "name": "S14_b5_extra_p1"
+    },
+    {
+      "feature_profile": "B5",
+      "model_kind": "gbdt",
+      "penalty": 1.0,
+      "max_trigger_rate": 0.75,
+      "name": "S15_b5_gbdt_p1_cap75"
+    },
+    {
+      "feature_profile": "B5",
+      "model_kind": "gbdt",
+      "penalty": 1.0,
+      "max_trigger_rate": 0.5,
+      "name": "S16_b5_gbdt_p1_cap50"
+    }
+  ],
+  "model_parameters": {
+    "detector": "GradientBoostingClassifier(random_state=0), library defaults",
+    "S09": {
+      "model": "ExtraTreesClassifier",
+      "n_estimators": 160,
+      "max_depth": 10,
+      "class_weight": "balanced",
+      "penalty": 1.5,
+      "seed_rule": "r014c stable_seed on held-out group; preserved in source"
+    }
+  },
+  "upstream": {
+    "KataGo": "v1.16.5",
+    "GoAttack": "a12008625445fb7a123d0d02cebbd11d6d416fd8",
+    "KataGo-custom": "960cf2c6131b1145465a6539cb7581dd9430bc80",
+    "ELF": "6b6c0bc3fd3b58c88e85836cbac923931e3e5118",
+    "LeelaZero": "68386d6334641ba345a225cf3cf77ce39f646771"
+  },
+  "budgets": {
+    "search": [
+      64,
+      256
+    ],
+    "guard_reference": [
+      1024,
+      4096
+    ],
+    "sensitivity": [
+      1024,
+      8192
+    ],
+    "network": 1024,
+    "leela": 512,
+    "elf_rollouts": 1600
+  }
+}

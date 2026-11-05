@@ -1,0 +1,314 @@
+diff --git a/scripts/elfgames/go/console_lib.py b/scripts/elfgames/go/console_lib.py
+index d7c189c..b570f68 100644
+--- a/scripts/elfgames/go/console_lib.py
++++ b/scripts/elfgames/go/console_lib.py
+@@ -238,6 +238,14 @@ class GoConsoleGTP:
+         else:
+             return False, msg
+ 
++    def on_gotopo_set_position(self, batch, items, reply):
++        if len(items) != 3:
++            return False, "syntax error"
++        ok = batch.GC.getGame(0).setPosition(items[1], items[2])
++        if not ok:
++            return False, "invalid board"
++        return True, None
++
+     def on_play(self, batch, items, reply):
+         ret, msg = self.check_player(batch, items[1][0])
+         if ret:
+@@ -290,6 +298,7 @@ class GoConsoleGTP:
+                 self, predicate=inspect.ismethod)
+             if key.startswith("on_")
+         }
++        self.commands["gotopo-set_position"] = self.on_gotopo_set_position
+ 
+     def move2action(self, v):
+         if v.lower() in self.actions:
+diff --git a/src_cpp/elfgames/go/base/board.cc b/src_cpp/elfgames/go/base/board.cc
+index 0872f81..1bf19eb 100644
+--- a/src_cpp/elfgames/go/base/board.cc
++++ b/src_cpp/elfgames/go/base/board.cc
+@@ -106,6 +106,101 @@ void clearBoard(Board* board) {
+   board->_ply = 1;
+ }
+ 
++bool SetRawPosition(
++    Board* board,
++    const std::string& boardstr,
++    Stone next_player) {
++  if (board == nullptr || boardstr.size() != NUM_INTERSECTION ||
++      (next_player != S_BLACK && next_player != S_WHITE)) {
++    return false;
++  }
++
++  clearBoard(board);
++  board->_next_player = next_player;
++  board->_simple_ko = M_PASS;
++  board->_simple_ko_color = S_EMPTY;
++  board->_ko_age = 1;
++
++  for (int row = 0; row < BOARD_SIZE; ++row) {
++    for (int x = 0; x < BOARD_SIZE; ++x) {
++      char ch = boardstr[row * BOARD_SIZE + x];
++      Stone s = S_EMPTY;
++      if (ch == 'B' || ch == 'X' || ch == 'b' || ch == 'x') {
++        s = S_BLACK;
++      } else if (ch == 'W' || ch == 'O' || ch == 'w' || ch == 'o') {
++        s = S_WHITE;
++      } else if (ch != '.') {
++        return false;
++      }
++      if (s == S_EMPTY) {
++        continue;
++      }
++      Coord c = OFFSETXY(x, BOARD_SIZE - 1 - row);
++      set_color(board, c, s);
++      board->_infos[c].id = 0;
++      board->_infos[c].next = 0;
++      board->_infos[c].last_placed = 1;
++    }
++  }
++
++  for (int y = 0; y < BOARD_SIZE; ++y) {
++    for (int x = 0; x < BOARD_SIZE; ++x) {
++      Coord start = OFFSETXY(x, y);
++      Stone color = board->_infos[start].color;
++      if (!HAS_STONE(color) || board->_infos[start].id != 0) {
++        continue;
++      }
++      if (board->_num_groups >= MAX_GROUP) {
++        return false;
++      }
++
++      unsigned short id = board->_num_groups++;
++      Group* group = &board->_groups[id];
++      group->color = color;
++      group->start = 0;
++      group->stones = 0;
++      group->liberties = 0;
++
++      Coord queue[NUM_INTERSECTION];
++      int head = 0;
++      int tail = 0;
++      bool seen_liberty[BOUND_COORD] = {};
++      queue[tail++] = start;
++      board->_infos[start].id = id;
++
++      while (head < tail) {
++        Coord c = queue[head++];
++        board->_infos[c].next = group->start;
++        group->start = c;
++        group->stones++;
++
++        FOR4(c, _, cc) {
++          Stone neighbor = board->_infos[cc].color;
++          if (neighbor == S_EMPTY) {
++            if (!seen_liberty[cc]) {
++              seen_liberty[cc] = true;
++              group->liberties++;
++            }
++          } else if (neighbor == color && board->_infos[cc].id == 0) {
++            board->_infos[cc].id = id;
++            if (tail >= NUM_INTERSECTION) {
++              return false;
++            }
++            queue[tail++] = cc;
++          }
++        }
++        ENDFOR4
++      }
++
++      if (group->stones <= 0 || group->liberties <= 0) {
++        return false;
++      }
++    }
++  }
++
++  return true;
++}
++
+ bool PlaceHandicap(Board* board, int x, int y, Stone player) {
+   // If the game has already started, return false.
+   if (board->_ply > 1)
+diff --git a/src_cpp/elfgames/go/base/board.h b/src_cpp/elfgames/go/base/board.h
+index 1667ac0..80006af 100644
+--- a/src_cpp/elfgames/go/base/board.h
++++ b/src_cpp/elfgames/go/base/board.h
+@@ -10,6 +10,7 @@
+ 
+ #include <memory.h>
+ #include <stdio.h>
++#include <string>
+ #include "common.h"
+ 
+ // 19x19 only
+@@ -287,6 +288,7 @@ extern inline Coord getCoord(int x, int y) {
+ }
+ 
+ void clearBoard(Board* board);
++bool SetRawPosition(Board* board, const std::string& boardstr, Stone next_player);
+ void copyBoard(Board* dst, const Board* src);
+ bool compareBoard(const Board* b1, const Board* b2);
+ // Return true if the move is valid and can be played, if so, properly set up
+diff --git a/src_cpp/elfgames/go/base/go_state.cc b/src_cpp/elfgames/go/base/go_state.cc
+index d99f102..1ffcccb 100644
+--- a/src_cpp/elfgames/go/base/go_state.cc
++++ b/src_cpp/elfgames/go/base/go_state.cc
+@@ -140,4 +140,18 @@ void GoState::reset() {
+   _has_final_value = false;
+ }
+ 
++bool GoState::setRawPosition(const std::string& boardstr, Stone next_player) {
++  reset();
++  if (!SetRawPosition(&_board, boardstr, next_player)) {
++    reset();
++    return false;
++  }
++  _moves.clear();
++  _board_hash.clear();
++  _history.clear();
++  _final_value = 0.0;
++  _has_final_value = false;
++  return true;
++}
++
+ HandicapTable GoState::_handi_table;
+diff --git a/src_cpp/elfgames/go/base/go_state.h b/src_cpp/elfgames/go/base/go_state.h
+index 81a68bd..5da2710 100644
+--- a/src_cpp/elfgames/go/base/go_state.h
++++ b/src_cpp/elfgames/go/base/go_state.h
+@@ -112,6 +112,7 @@ class GoState {
+   }
+ 
+   void reset();
++  bool setRawPosition(const std::string& boardstr, Stone next_player);
+   void applyHandicap(int handi);
+ 
+   GoState(const GoState& s)
+diff --git a/src_cpp/elfgames/go/common/game_selfplay.cc b/src_cpp/elfgames/go/common/game_selfplay.cc
+index c705447..104c019 100644
+--- a/src_cpp/elfgames/go/common/game_selfplay.cc
++++ b/src_cpp/elfgames/go/common/game_selfplay.cc
+@@ -27,6 +27,23 @@ GoGameSelfPlay::GoGameSelfPlay(
+           "elfgames::go::GoGameSelfPlay-" + std::to_string(game_idx) + "-",
+           "")) {}
+ 
++bool GoGameSelfPlay::setPosition(
++    const std::string& next_player,
++    const std::string& boardstr) {
++  Stone player = S_EMPTY;
++  if (next_player == "B" || next_player == "b" ||
++      next_player == "black" || next_player == "Black") {
++    player = S_BLACK;
++  } else if (
++      next_player == "W" || next_player == "w" ||
++      next_player == "white" || next_player == "White") {
++    player = S_WHITE;
++  } else {
++    return false;
++  }
++  return _state_ext.setRawPosition(boardstr, player);
++}
++
+ MCTSGoAI* GoGameSelfPlay::init_ai(
+     const std::string& actor_name,
+     const elf::ai::tree_search::TSOptions& mcts_options,
+diff --git a/src_cpp/elfgames/go/common/game_selfplay.h b/src_cpp/elfgames/go/common/game_selfplay.h
+index 6bbb655..ca41f09 100644
+--- a/src_cpp/elfgames/go/common/game_selfplay.h
++++ b/src_cpp/elfgames/go/common/game_selfplay.h
+@@ -54,6 +54,7 @@ class GoGameSelfPlay : public GoGameBase {
+   float getLastScore() const {
+     return _state_ext.getLastGameFinalValue();
+   }
++  bool setPosition(const std::string& next_player, const std::string& boardstr);
+ 
+  private:
+   void setAsync();
+diff --git a/src_cpp/elfgames/go/common/go_state_ext.h b/src_cpp/elfgames/go/common/go_state_ext.h
+index 2825f68..f254353 100644
+--- a/src_cpp/elfgames/go/common/go_state_ext.h
++++ b/src_cpp/elfgames/go/common/go_state_ext.h
+@@ -219,6 +219,13 @@ struct GoStateExt {
+     return _state.forward(c);
+   }
+ 
++  bool setRawPosition(const std::string& boardstr, Stone next_player) {
++    _mcts_policies.clear();
++    _predicted_values.clear();
++    _resign_check.reset();
++    return _state.setRawPosition(boardstr, next_player);
++  }
++
+   const GoState& state() const {
+     return _state;
+   }
+diff --git a/src_cpp/elfgames/go/inference/Pybind.cc b/src_cpp/elfgames/go/inference/Pybind.cc
+index 666106a..fe0db22 100644
+--- a/src_cpp/elfgames/go/inference/Pybind.cc
++++ b/src_cpp/elfgames/go/inference/Pybind.cc
+@@ -40,7 +40,8 @@ void registerPy(pybind11::module& m) {
+       .def("getNextPlayer", &GoGameSelfPlay::getNextPlayer)
+       .def("getLastMove", &GoGameSelfPlay::getLastMove)
+       .def("getScore", &GoGameSelfPlay::getScore)
+-      .def("getLastScore", &GoGameSelfPlay::getLastScore);
++      .def("getLastScore", &GoGameSelfPlay::getLastScore)
++      .def("setPosition", &GoGameSelfPlay::setPosition);
+ }
+ 
+ } // namespace go
+diff --git a/src_cpp/elfgames/go/inference/game_context.h b/src_cpp/elfgames/go/inference/game_context.h
+index 54c5c50..b3a653f 100644
+--- a/src_cpp/elfgames/go/inference/game_context.h
++++ b/src_cpp/elfgames/go/inference/game_context.h
+@@ -70,13 +70,13 @@ class GameContext {
+     return goFeature_.getParams();
+   }
+ 
+-  const GoGameBase* getGame(int game_idx) const {
++  GoGameSelfPlay* getGame(int game_idx) const {
+     if (_check_game_idx(game_idx)) {
+       logger_->error("Invalid game_idx [{}]", game_idx);
+       return nullptr;
+     }
+ 
+-    return games_[game_idx].get();
++    return dynamic_cast<GoGameSelfPlay*>(games_[game_idx].get());
+   }
+ 
+   // Used in client side.
+diff --git a/src_cpp/elfgames/go/train/Pybind.cc b/src_cpp/elfgames/go/train/Pybind.cc
+index 24f9c3a..a4b8ed0 100644
+--- a/src_cpp/elfgames/go/train/Pybind.cc
++++ b/src_cpp/elfgames/go/train/Pybind.cc
+@@ -59,7 +59,8 @@ void registerPy(pybind11::module& m) {
+       .def("getNextPlayer", &GoGameSelfPlay::getNextPlayer)
+       .def("getLastMove", &GoGameSelfPlay::getLastMove)
+       .def("getScore", &GoGameSelfPlay::getScore)
+-      .def("getLastScore", &GoGameSelfPlay::getLastScore);
++      .def("getLastScore", &GoGameSelfPlay::getLastScore)
++      .def("setPosition", &GoGameSelfPlay::setPosition);
+ }
+ 
+ } // namespace go
+diff --git a/src_cpp/elfgames/go/train/game_context.h b/src_cpp/elfgames/go/train/game_context.h
+index ff592b8..91db174 100644
+--- a/src_cpp/elfgames/go/train/game_context.h
++++ b/src_cpp/elfgames/go/train/game_context.h
+@@ -88,13 +88,13 @@ class GameContext {
+     return goFeature_.getParams();
+   }
+ 
+-  const GoGameBase* getGame(int game_idx) const {
++  GoGameSelfPlay* getGame(int game_idx) const {
+     if (_check_game_idx(game_idx)) {
+       logger_->error("Invalid game_idx [{}]", game_idx);
+       return nullptr;
+     }
+ 
+-    return games_[game_idx].get();
++    return dynamic_cast<GoGameSelfPlay*>(games_[game_idx].get());
+   }
+ 
+   elf::Context* ctx() {

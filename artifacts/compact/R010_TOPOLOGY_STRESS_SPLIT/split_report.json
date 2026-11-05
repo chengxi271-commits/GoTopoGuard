@@ -1,0 +1,32 @@
+{
+  "run_id": "R010",
+  "generated_at_unix": 1780756423,
+  "evidence_class": "controlled topology stress construction only",
+  "split_id": "D5_TOPOLOGY_STRESS_TEMPLATES",
+  "families": [
+    "cyclic_enclosure",
+    "cut_connect_corridor",
+    "ladder_net_escape",
+    "boundary_escape_route",
+    "false_eye_enclosure",
+    "shared_liberty_race",
+    "pass_scoring_instability"
+  ],
+  "status": "done",
+  "per_family_target": 144,
+  "position_count": 1008,
+  "family_counts": {
+    "cyclic_enclosure": 144,
+    "cut_connect_corridor": 144,
+    "ladder_net_escape": 144,
+    "boundary_escape_route": 144,
+    "false_eye_enclosure": 144,
+    "shared_liberty_race": 144,
+    "pass_scoring_instability": 144
+  },
+  "invalid_face_validity_counts": {
+    "boundary_escape_route": 403
+  },
+  "duplicate_signature_skipped": 365,
+  "unique_signature_count": 1008
+}

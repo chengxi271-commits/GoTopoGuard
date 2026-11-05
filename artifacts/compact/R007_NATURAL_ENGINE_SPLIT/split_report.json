@@ -1,0 +1,44 @@
+{
+  "run_id": "R007",
+  "generated_at_unix": 1780754643,
+  "evidence_class": "split construction only",
+  "status": "done",
+  "split_id": "D2_NATURAL_ENGINE_KATAGO",
+  "source_id": "katago_kata1_multi",
+  "source_url": null,
+  "source_urls": [
+    "https://katagoarchive.org/kata1/traininggames/2020-12-12sgfs.tar.bz2",
+    "https://katagoarchive.org/kata1/traininggames/2021-01-15sgfs.tar.bz2",
+    "https://katagoarchive.org/kata1/traininggames/2021-03-15sgfs.tar.bz2",
+    "https://katagoarchive.org/kata1/traininggames/2021-05-30sgfs.tar.bz2",
+    "https://katagoarchive.org/kata1/traininggames/2021-07-10sgfs.tar.bz2",
+    "https://katagoarchive.org/kata1/traininggames/2021-09-12sgfs.tar.bz2",
+    "https://katagoarchive.org/kata1/traininggames/2021-10-30sgfs.tar.bz2"
+  ],
+  "target_count": 2000,
+  "position_count": 2000,
+  "window_target_counts": {
+    "early_40_80": 667,
+    "mid_80_140": 667,
+    "late_140_220": 666
+  },
+  "window_counts": {
+    "early_40_80": 667,
+    "mid_80_140": 667,
+    "late_140_220": 666
+  },
+  "scanned_sgf_count": 1272,
+  "source_status_counts": {
+    "rejected_board_size": 553,
+    "accepted_games_with_positions": 698,
+    "invalid_replay": 3,
+    "parse_or_prefix_error": 18,
+    "duplicate_prefix_signature_skipped": 8
+  },
+  "per_source_scanned_sgf_count": {
+    "katago_kata1_2020_12_12": 370,
+    "katago_kata1_2021_01_15": 902
+  },
+  "unique_signature_count": 2000,
+  "katago_query_compatible_count": 2000
+}
